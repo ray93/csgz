@@ -1,0 +1,172 @@
+/* 公共样式 */
+
+.main {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.borderbox {
+  box-sizing: border-box;
+}
+
+ul.noStyle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a.noStyle {
+  text-decoration: none;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.hr1 {
+  height: 3px;
+  background: #dcdcdc;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.pointer {
+  cursor: pointer;
+}
+/* 以下为页面样式 */
+
+#logo {
+  width: 100%;
+  height: 79px;
+  padding-top: 29px;
+}
+
+#logo img {
+  display: block;
+  max-height: 79px;
+  margin: 0 auto;
+}
+
+.menu-group {
+  width: 100%;
+  height: 30px;
+  background: #333333;
+}
+
+.menu-group .menu-ul {
+  margin-left: 210px;
+  font-size: 0;
+}
+
+.menu-group .menu-item {
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  color: #b3b3b3;
+  font-family: PingFangSC;
+  width: 189.2px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.menu-group .menu-item.selected,
+.menu-group .menu-item:hover {
+  background: #13a2e0;
+  color: #ffffff;
+}
+
+footer {
+  width: 100%;
+  height: 337px;
+  background: #f5f5f5;
+  padding: 0px 210px 60px;
+}
+
+footer .link-group {
+  height: 222px;
+}
+
+footer .links-item {
+  float: left;
+  margin-top: 42px;
+  margin-right: 108px;
+}
+
+footer .links-item:nth-child(4) {
+  margin-right: 104px;
+}
+
+footer .link-title {
+  color: #333333;
+  font-family: PingFang;
+  font-size: 22px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+footer a.link {
+  margin: 0 0 8px 0;
+  color: #999999;
+  font-family: PingFang;
+  font-size: 18.0px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+}
+
+footer .links-item.wx {
+  margin: 0;
+  margin-top: 40px;
+}
+
+footer .links-item.wx img {
+  width: 109px;
+  margin: 0 18px;
+}
+
+footer .links-item.wx span {
+  color: #636363;
+  margin-top: 11px;
+  display: block;
+  font-family: PingFang;
+  font-size: 18.0px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+}
+
+footer .copy {
+  color: #aaaaaa;
+  margin-top: 32px;
+  font-family: PingFang;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+}
+
+footer #toTop {
+  width: 44px;
+  height: 44px;
+  margin-top: 20px;
+  margin-right: 51px;
+  float: right;
+}
+
+footer #toTop img {
+  max-width: 44px;
+  max-height: 44px;
+}
