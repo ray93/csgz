@@ -8,7 +8,9 @@
   <title>创思感知</title>
 
   <link rel="stylesheet" href="../lib/normalize.css">
+  <link rel="stylesheet" href="../lib/element-ui/index.css">
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
@@ -28,7 +30,78 @@
         </ul>
       </div>
     </header>
-
+    <!-- 内容 -->
+    <div class="content" id="app">
+      <div class="banner">
+        <el-carousel trigger="click" height="440px">
+          <el-carousel-item v-for="item in banners" :key="item.id">
+            <img :src="item.url" alt="banner图片">
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+      <div class="borderbox item product">
+        <div class="borderbox inline stfont title">
+          产品中心
+        </div>
+        <div class="product-group clear">
+          <div class="product-item pointer">
+            <div class="product-img">
+              <img src="../img/index/product/drainage.png" alt="引流应用">
+              <div class="circle circle1"></div>
+              <div class="circle circle2"></div>
+              <div class="circle circle3"></div>
+            </div>
+            <div class="product-hr"></div>
+            <div class="product-name stfont">引流应用</div>
+            <div class="product-icon">
+              <img src="../img/index/product/drainageico.png" alt="引流应用">
+            </div>
+          </div>
+          <div class="product-item pointer">
+            <div class="product-img">
+              <img src="../img/index/product/shop.png" alt="购物应用">
+              <div class="circle circle1"></div>
+              <div class="circle circle2"></div>
+              <div class="circle circle3"></div>
+            </div>
+            <div class="product-hr"></div>
+            <div class="product-name stfont">购物应用</div>
+            <div class="product-icon">
+              <img src="../img/index/product/shopico.png" alt="购物应用">
+            </div>
+          </div>
+          <div class="product-item pointer">
+            <div class="product-img">
+              <img src="../img/index/product/behavior.png" alt="行为分析">
+              <div class="circle circle1"></div>
+              <div class="circle circle2"></div>
+              <div class="circle circle3"></div>
+            </div>
+            <div class="product-hr"></div>
+            <div class="product-name stfont">行为分析</div>
+            <div class="product-icon">
+              <img src="../img/index/product/behaviorico.png" alt="行为分析">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="borderbox item program">
+        <div class="borderbox inline stfont title">
+          解决方案
+        </div>
+        <div class="inline pointer more">
+          查看更多
+        </div>
+        <div class="borderbox program-content">
+          <div class="subtitle stfont">智慧门店解决方案</div>
+          <div class="control pointer stfont" :class="[isOpen?'open':'close']" @click="isOpen = !isOpen">功能说明</div>
+          <div class="clearRight"></div>
+          <div class="program-img">
+            <img src="../img/index/troncell.png" alt="智慧门店解决方案">
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- 页脚 -->
     <footer class="borderbox">
       <div class="link-group clear">
@@ -64,6 +137,10 @@
       </div>
     </footer>
   </div>
+
+  <script src="../lib/vue/vue.js"></script>
+  <script src="../lib/element-ui/index.js"></script>
+  <script src="../js/index.js"></script>
 </body>
 
 </html>

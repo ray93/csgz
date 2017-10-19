@@ -41,6 +41,16 @@ a.noStyle {
 .pointer {
   cursor: pointer;
 }
+
+.stfont {
+  font-family: PingFang;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 400;
+}
+.clearRight {
+  clear: right;
+}
 /* 以下为页面样式 */
 
 #logo {
