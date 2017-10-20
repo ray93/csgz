@@ -6,7 +6,7 @@
 }
 
 body {
-  min-width: 1200px;
+  min-width: 1366px;
 }
 
 .borderbox {
@@ -52,9 +52,12 @@ a.noStyle {
   font-stretch: normal;
   font-weight: 400;
 }
+
 .clearRight {
   clear: right;
 }
+
+
 /* 以下为页面样式 */
 
 #logo {
@@ -113,7 +116,7 @@ footer .link-group {
 footer .links-item {
   float: left;
   margin-top: 42px;
-  margin-right: 108px;
+  margin-right: 106px;
 }
 
 footer .links-item:nth-child(4) {
@@ -183,4 +186,43 @@ footer #toTop {
 footer #toTop img {
   max-width: 44px;
   max-height: 44px;
+}
+
+
+/* 水平菜单样式 */
+
+.horizontal-menu {
+  margin-top: 55px;
+  width: 100%;
+  height: 36px;
+  box-sizing: border-box;
+  border-bottom: 3px solid #eaeaea;
+  display: flex;
+  justify-content: space-around;
+}
+
+.horizontal-menu .menu-item {
+  font-size: 18.0px;
+  height: 100%;
+  color: #aaaaaa;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.horizontal-menu .menu-item>div {
+  border-bottom: 4px solid transparent;
+}
+
+.horizontal-menu .menu-item.selected>div {
+  color: #333333;
+  border-color: #13a2e0;
+  height: calc(100% - 4px);
+}
+
+.horizontal-menu .menu-br {
+  width: 2px;
+  height: 22px;
+  background: #eaeaea;
+  flex-shrink: 0;
 }

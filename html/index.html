@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>创思感知</title>
 
@@ -97,7 +96,79 @@
           <div class="control pointer stfont" :class="[isOpen?'open':'close']" @click="isOpen = !isOpen">功能说明</div>
           <div class="clearRight"></div>
           <div class="program-img">
-            <img src="../img/index/troncell.png" alt="智慧门店解决方案">
+            <img :src="isOpen?'../img/index/troncell-open.png':'../img/index/troncell.png'" alt="智慧门店解决方案">
+          </div>
+        </div>
+      </div>
+      <div class="borderbox item news">
+        <div class="borderbox inline stfont title">
+          媒体报道
+        </div>
+        <div class="inline pointer more">
+          查看更多
+        </div>
+        <div class="borderbox news-content">
+          <div class="news-item">
+            <div class="img-margin">
+              <img src="http://iph.href.lu/300x225" alt="">
+            </div>
+            <div class="stfont news-value">互动之趣：让你身临其境，步入现场</div>
+            <div class="stfont news-time">2017.07.28</div>
+          </div>
+          <div class="news-item">
+            <div class="img-margin">
+              <img src="http://iph.href.lu/300x225" alt="">
+            </div>
+            <div class="stfont news-value">创思携手casio开创零售新市场</div>
+            <div class="stfont news-time">2017.07.28</div>
+          </div>
+          <div class="news-item">
+            <div class="img-margin">
+              <img src="http://iph.href.lu/300x225" alt="">
+            </div>
+            <div class="stfont news-value">转型新零售之路：向智慧零售迈进</div>
+            <div class="stfont news-time">2017.07.2</div>
+          </div>
+        </div>
+      </div>
+      <div class="borderbox item cooperation">
+        <div class="borderbox inline stfont title">
+          解决方案
+        </div>
+        <div class="inline pointer more">
+          查看更多
+        </div>
+        <div class="borderbox cooperation-content">
+          <div class="cooperation-count">
+            <div class="count-item">
+              <span class="stfont count-name">客户</span>
+              <span class="stfont count-value">80+</span>
+            </div>
+            <div class="count-item">
+              <span class="stfont count-name">成功案例</span>
+              <span class="stfont count-value">100+</span>
+            </div>
+            <div class="count-item">
+              <span class="stfont count-name">业态</span>
+              <span class="stfont count-value">20+</span>
+            </div>
+          </div>
+          <div class="horizontal-menu">
+            <div class="borderbox pointer stfont menu-item" :class="{selected:selectedType==='brands'}" @click="changeSelected('brands')">
+              <div>品牌合作</div>
+            </div>
+            <div class="menu-br"></div>
+            <div class="borderbox pointer stfont menu-item" :class="{selected:selectedType==='malls'}" @click="changeSelected('malls')">
+              <div>商场合作</div>
+            </div>
+          </div>
+          <div class="cooperation-brands">
+            <el-row type="flex" justify="space-around" v-for="(items, index) in brands" :key="index">
+              <el-col :span="4" v-for="item in items">
+                <div class="grid-content bg-purple brand-item" :style="{'background-image': getImg(item)}" @mouseover="item.isHover = true"
+                  @mouseout="item.isHover = false"></div>
+              </el-col>
+            </el-row>
           </div>
         </div>
       </div>

@@ -1,0 +1,3 @@
+Vue.components('horizontal-menu', {
+
+});
