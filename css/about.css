@@ -161,9 +161,88 @@
     text-align: left;
 }
 
-.content #tooltip1 {
-  position: absolute;
-  left: 20px;
-  top: 50px;
-  border: 1px solid red;
+.content .timeline .tooltip img {
+    margin: 0;
+}
+
+.content .timeline .tooltip {
+    position: absolute;
+    margin: 0;
+}
+
+.content #tooltip201310 {
+    left: 505px;
+    top: 170px;
+}
+
+.content #tooltip201312 {
+    left: 93px;
+    top: 305px;
+}
+
+.content #tooltip201407 {
+    left: 505px;
+    top: 610px;
+}
+
+.content #tooltip201507 {
+    left: 122px;
+    top: 915px;
+}
+
+.content #tooltip201512 {
+    left: 505px;
+    top: 1050px;
+}
+
+.content #tooltip201608 {
+    left: 122px;
+    top: 1355px;
+}
+
+.content #tooltip201610 {
+    left: 508px;
+    top: 1488px;
+}
+
+.content #tooltip201706 {
+    left: -5px;
+    top: 1878px;
+}
+
+.content .contactgroup {
+    width: 100%;
+    height: 180px;
+    padding-left: 338px;
+    padding-right: 337px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.content .contactgroup .contactitem {
+    text-align: center;
+    height: 100px;
+}
+
+.content .contactitem.brand-item {
+    height: 66px;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.content .contactgroup .contactdetail {
+    color: #666666;
+    font-size: 14.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.content .contactgroup .wechattooltip {
+    position: absolute;
+    left: -65px;
+    top: 68px;
 }

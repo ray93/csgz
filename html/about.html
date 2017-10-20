@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>创思感知</title>
 
@@ -119,13 +118,49 @@
           </ul>
         </div>
         <div class="timeline">
-          <div id="tooltip1">dsa</div>
+          <div class="tooltip" id="tooltip201310">
+            <img src="../img/about/tooltip201310.png" alt="发布创思">
+          </div>
+          <div class="tooltip" id="tooltip201312">
+            <img src="../img/about/tooltip201312.png" alt="发布创思">
+          </div>
+          <div class="tooltip" id="tooltip201407">
+            <img src="../img/about/tooltip201407.png" alt="发布创思">
+          </div>
+          <div class="tooltip" id="tooltip201507">
+            <img src="../img/about/tooltip201507.png" alt="发布创思">
+          </div>
+          <div class="tooltip" id="tooltip201512">
+            <img src="../img/about/tooltip201512.png" alt="发布创思">
+          </div>
+          <div class="tooltip" id="tooltip201608">
+            <img src="../img/about/tooltip201608.png" alt="发布创思">
+          </div>
+          <div class="tooltip" id="tooltip201610">
+            <img src="../img/about/tooltip201610.png" alt="发布创思">
+          </div>
+          <div class="tooltip" id="tooltip201706">
+            <img src="../img/about/tooltip201706.png" alt="发布创思">
+          </div>
           <img src="../img/about/timeline.png" alt="时间轴">
           <br>
           <img src="../img/about/shop.png" alt="智慧商店">
           <br>
           <span>打造国内新零售智慧门店NO.1服务商</span>
         </div>
+      </div>
+
+      <!-- 联系方式 -->
+      <div class="borderbox contactgroup">
+        <el-row>
+          <el-col :span="6" v-for="item in contacts" :key="item.id">
+            <div class="contactitem brand-item" :style="{'background-image': getImg(item)}" @mouseover="item.isHover = true" @mouseout="item.isHover = false"></div>
+            <div class="contactdetail">{{item.detail}}</div>
+            <div class="wechattooltip" v-if="item.isHover === true && item.id === 'wechat' ">
+              <img src="../img/about/wechat_tooltip.png" alt="">
+            </div>
+          </el-col>
+        </el-row>
       </div>
     </div>
 
