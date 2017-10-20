@@ -143,6 +143,7 @@
 .content .timeline {
     margin-top: 40px;
     text-align: center;
+    position: relative;
 }
 
 .content .timeline img {
@@ -158,4 +159,11 @@
     font-stretch: normal;
     font-weight: 400;
     text-align: left;
+}
+
+.content #tooltip1 {
+  position: absolute;
+  left: 20px;
+  top: 50px;
+  border: 1px solid red;
 }
