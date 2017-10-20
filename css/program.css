@@ -1,0 +1,207 @@
+.content .banner {
+  width: 100%;
+  height: 440px;
+}
+
+.content .item {
+  width: 100%;
+  padding: 40px 210px 50px;
+}
+
+.content .title {
+  padding-left: 20px;
+  color: #333333;
+  font-size: 36.0px;
+  height: 50px;
+  line-height: 50px;
+  border-left: 4px solid #13a2e0;
+}
+
+.content .more {
+  height: 28px;
+  line-height: 28px;
+  padding-right: 38px;
+  background: url('../img/index/more_normal.png') right center no-repeat;
+  float: right;
+}
+
+.content .more:hover {
+  background-image: url('../img/index/more_pressed.png');
+}
+
+
+/* 单独样式 */
+
+.content .banner img {
+  height: 440px;
+}
+
+.content .store .store-content {
+  margin-top: 40px;
+  width: 100%;
+  height: 306px;
+  background: url('../img/program/store.png') right center no-repeat;
+  position: relative;
+}
+
+.content .store .store-content .store-item {
+  height: 54px;
+  padding-left: 70px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+
+.content .store .store-content .store-item:nth-child(1) {
+  background-image: url('../img/program/drainage-ico.png');
+}
+
+.content .store .store-content .store-item:nth-child(2) {
+  margin-left: 114px;
+  background-image: url('../img/program/behavior-ico.png');
+}
+
+.content .store .store-content .store-item:nth-child(4) {
+  background-image: url('../img/program/shop-ico.png');
+}
+
+.content .store .store-content .store-item:nth-child(5) {
+  margin-left: 114px;
+  background-image: url('../img/program/app-ico.png');
+}
+
+.content .store .store-content .store-item span {
+  color: #333333;
+  height: 54px;
+  line-height: 54px;
+  font-size: 24px;
+}
+
+.content .program {
+  height: 840px;
+  background: #fbfbfd;
+}
+
+.content .program-content {
+  height: calc(100% - 50px);
+  width: 100%;
+}
+
+.content .program-content .subtitle {
+  width: 284px;
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  font-size: 28.0px;
+  background: url('../img/index/subtitle-bg.png') center center no-repeat;
+  text-align: center;
+  margin: 18px auto;
+}
+
+.content .program-content .control {
+  display: inline-block;
+  float: right;
+  height: 31px;
+  line-height: 31px;
+  color: #999999;
+  font-size: 20.0px;
+  margin-right: 50px;
+  text-align: right;
+  padding-right: 70px;
+  background-image: url('../img/index/close.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.content .program-content .control.close {
+  background-image: url('../img/index/close.png');
+}
+
+.content .program-content .control.open {
+  background-image: url('../img/index/open.png');
+}
+
+.content .program-content .program-img {
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.content .program-content .program-img img {
+  margin: 0 auto;
+  display: block;
+}
+
+.content .service-content {
+  height: 414px;
+  margin: 50px 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .service-content .service-item {
+  width: 292px;
+  height: 100%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 5px;
+  border: 1px solid #d7d7d7;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content .service-content .service-item.item-01 {
+  background-image: url('../img/program/01product.png');
+}
+
+.content .service-content .service-item.item-02 {
+  background-image: url('../img/program/02activeity.png');
+}
+
+.content .service-content .service-item.item-03 {
+  background-image: url('../img/program/03drainage.png');
+}
+
+.content .service-content .service-item .service-subtitle {
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  margin-top: 260px;
+  margin-bottom: 12px;
+  line-height: 30px;
+  font-size: 22px;
+  color: #333333;
+}
+
+.content .service-content .service-item .service-content {
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  line-height: 22px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.content .item-more {
+  height: 252px;
+  background: #fbfbfd;
+}
+
+.content .item-more .text {
+  margin: 30px auto;
+  color: #666666;
+  font-size: 24.0px;
+  text-align: center;
+  height: 33px;
+  line-height: 33px;
+}
+.content .item-more .more-btn {
+  margin: 0 auto;
+  width: 160px;
+  height: 48px;
+  background: #13a2e0;
+  border-radius: 24px;
+  line-height: 48px;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+}

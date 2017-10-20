@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>创思感知</title>
+
+  <link rel="stylesheet" href="../lib/normalize.css">
+  <link rel="stylesheet" href="../lib/element-ui/index.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/program.css">
+</head>
+
+<body>
+  <div class="main">
+    <!-- 顶部logo及菜单 -->
+    <header>
+      <div id="logo" class="borderbox">
+        <img src="../img/logo.png" alt="logo">
+      </div>
+      <div class="menu-group">
+        <ul class="noStyle menu-ul">
+          <li class="inline"><a class="noStyle inline menu-item" href="#">首页</a></li>
+          <li class="inline"><a class="noStyle inline menu-product menu-item" href="#">
+            <span>产品中心</span>
+            <div id="product-menu">
+              <div class="stfont product-type selected">引流应用</div>
+              <div class="hr0"></div>
+              <div class="stfont product-type">购物应用</div>
+              <div class="hr0"></div>
+              <div class="stfont product-type">行为分析</div>
+            </div>
+          </a></li>
+          <li class="inline"><a class="noStyle inline menu-item selected" href="#">解决方案</a></li>
+          <li class="inline"><a class="noStyle inline menu-item" href="#">合作客户</a></li>
+          <li class="inline"><a class="noStyle inline menu-item" href="#">商家登陆</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- 内容 -->
+    <div class="content" id="app">
+      <div class="banner">
+        <img src="../img/program/banner.png" alt="">
+      </div>
+      <div class="borderbox item store">
+        <div class="borderbox inline stfont title">
+          创思感知智慧门店
+        </div>
+        <div class="borderbox store-content">
+          <div class="inline store-item">
+            <span class="inline stfont store-item-name">引流应用</span>
+          </div>
+          <div class="inline store-item">
+            <span class="inline stfont store-item-name">行为分析</span>
+          </div>
+          <br>
+          <div class="inline store-item">
+            <span class="inline stfont store-item-name">购物应用</span>
+          </div>
+          <div class="inline store-item">
+            <span class="inline stfont store-item-name">应用+</span>
+          </div>
+        </div>
+      </div>
+      <div class="borderbox item program">
+        <div class="borderbox inline stfont title">
+          解决方案
+        </div>
+        <div class="borderbox program-content">
+          <div class="subtitle stfont">智慧门店解决方案</div>
+          <div class="control pointer stfont" :class="[isOpen?'open':'close']" @click="isOpen = !isOpen">功能说明</div>
+          <div class="clearRight"></div>
+          <div class="program-img">
+            <img :src="isOpen?'../img/index/troncell-open.png':'../img/index/troncell.png'" alt="智慧门店解决方案">
+          </div>
+        </div>
+      </div>
+      <div class="borderbox item service">
+        <div class="borderbox inline stfont title">
+          特色服务
+        </div>
+        <div class="borderbox service-content">
+          <div class="borderbox service-item item-01">
+            <p class="inline stfont service-subtitle">产品定制</p>
+            <p class="service-content">配合市场化需求，定制产品外观与个性产品功</p>
+          </div>
+          <div class="borderbox service-item item-02">
+            <p class="inline stfont service-subtitle">活动定制</p>
+            <p class="service-content">配合不同营销互动目的与时间节点，提供、电</p>
+          </div>
+          <div class="borderbox service-item item-03">
+            <p class="inline stfont service-subtitle">引流获客</p>
+            <p class="service-content">采用体感交互、AR增强现实等技术给用户提</p>
+          </div>
+        </div>
+      </div>
+      <div class="borderbox item item-more">
+        <div class="stfont text">如果你想了解更多行业解决方案，请点击下面</div>
+        <div class="stfont more-btn">了解更多</div>
+      </div>
+    </div>
+    <!-- 页脚 -->
+    <footer class="borderbox">
+      <div class="link-group clear">
+        <div class="links-item">
+          <p class="link-title">商户支持</p>
+          <a href="#" class="noStyle block link">产品中心</a>
+          <a href="#" class="noStyle block link">解决方案</a>
+        </div>
+        <div class="links-item">
+          <p class="link-title">商户合作</p>
+          <a href="#" class="noStyle block link">联系我们</a>
+          <a href="#" class="noStyle block link">合作客户</a>
+        </div>
+        <div class="links-item">
+          <p class="link-title">关于我们</p>
+          <a href="#" class="noStyle block link">公司介绍</a>
+          <a href="#" class="noStyle block link">媒体报道</a>
+        </div>
+        <div class="links-item">
+          <p class="link-title">公司站点</p>
+          <a href="#" class="noStyle block link">互动游戏平台</a>
+          <a href="#" class="noStyle block link">行为分析平台</a>
+        </div>
+        <div class="links-item wx">
+          <img src="../img/wx.png" alt="微信公众号"><br>
+          <span>关注我们的公众号</span>
+        </div>
+      </div>
+      <div class="hr1"></div>
+      <div class="inline copy">Copyright &copy; 无锡创思感知科技有限公司 All Rights Reserverd .苏ICP备13045243号-1</div>
+      <div id="toTop" class="pointer">
+        <img src="../img/totop.png" alt="返回顶部">
+      </div>
+    </footer>
+  </div>
+
+  <script src="../lib/vue/vue.js"></script>
+  <script src="../lib/element-ui/index.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>
