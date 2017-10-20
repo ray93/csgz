@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+body {
+  min-width: 1200px;
+}
+
 .borderbox {
   box-sizing: border-box;
 }
