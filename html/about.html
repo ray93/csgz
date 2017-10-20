@@ -156,9 +156,11 @@
           <el-col :span="6" v-for="item in contacts" :key="item.id">
             <div class="contactitem brand-item" :style="{'background-image': getImg(item)}" @mouseover="item.isHover = true" @mouseout="item.isHover = false"></div>
             <div class="contactdetail">{{item.detail}}</div>
-            <div class="wechattooltip" v-if="item.isHover === true && item.id === 'wechat' ">
-              <img src="../img/about/wechat_tooltip.png" alt="">
-            </div>
+            <transition name="fade">
+              <div class="wechattooltip" v-if="item.isHover === true && item.id === 'wechat' ">
+                <img src="../img/about/wechat_tooltip.png" alt="">
+              </div>
+            </transition>
           </el-col>
         </el-row>
       </div>
