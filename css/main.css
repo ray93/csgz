@@ -36,6 +36,11 @@ a.noStyle {
   background: #dcdcdc;
 }
 
+.hr0 {
+  height: 1px;
+  background: #e8e8e8;
+}
+
 .clear::after {
   content: "";
   display: block;
@@ -94,6 +99,39 @@ a.noStyle {
   height: 30px;
   text-align: center;
   line-height: 30px;
+}
+
+.menu-group .menu-product {
+  position: relative;
+}
+
+.menu-group .menu-product:hover #product-menu {
+  display: block;
+}
+
+.menu-group #product-menu {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 31px;
+  left: 21.5px;
+  width: 146px;
+  height: 154px;
+  box-sizing: border-box;
+  padding: 17px 13px 21px;
+  background: #ffffff;
+}
+
+.menu-group #product-menu .product-type {
+  height: 20px;
+  color: #535353;
+  font-size: 14.0px;
+  line-height: 20px;
+  margin: 11px 0px;
+}
+
+.menu-group #product-menu .product-type.selected {
+  color: #14a1df;
 }
 
 .menu-group .menu-item.selected,
