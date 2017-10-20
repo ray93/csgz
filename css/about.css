@@ -1,0 +1,161 @@
+.content .about_banner {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.content .about_banner img {
+    width: 100%;
+}
+
+.content .about_row {
+    width: 946px;
+    margin: auto;
+}
+
+.el-row {
+    margin-bottom: 50px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.el-col {
+    border-radius: 4px;
+}
+
+.bg-purple-dark {
+    background: #99a9bf;
+}
+
+.bg-purple {
+    background: #d3dce6;
+}
+
+.bg-purple-light {
+    background: #e5e9f2;
+}
+
+.grid-content {
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #999999;
+    width: 448px;
+    height: 370px;
+}
+
+.row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
+}
+
+.grid-content .gird_img {
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.grid-content .gird_img img {
+    vertical-align: middle;
+}
+
+.grid-content .gird_img span {
+    height: 50%;
+    display: inline-block;
+}
+
+.grid-content .gird_title {
+    height: 70px;
+}
+
+.grid-content .gird_content {
+    height: 150px;
+}
+
+.grid-content .gird_title h1 {
+    width: 200px;
+    height: 30px;
+    color: #333333;
+    font-size: 22.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+}
+
+.grid-content .gird_content p {
+    width: 320px;
+    height: 130px;
+    color: #666666;
+    font-size: 14.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    text-align: stretch;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: auto;
+}
+
+.content .item {
+    width: 100%;
+    padding: 0 210px 50px;
+}
+
+.content .title {
+    padding-left: 20px;
+    height: 80px;
+    border-left: 4px solid #13a2e0;
+}
+
+.content .title ul {
+    height: 80px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.content .title ul li {
+    list-style-type: none;
+}
+
+.content .title .litop {
+    width: 367px;
+    height: 50px;
+    color: #333333;
+    font-size: 36.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    text-align: left;
+}
+
+.content .title .libottom {
+    width: 298px;
+    height: 30px;
+    color: #a9a9a9;
+    font-size: 22.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    text-align: left;
+}
+
+.content .timeline {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.content .timeline img {
+    margin-top: 40px;
+}
+
+.content .timeline span {
+    width: 388px;
+    height: 33px;
+    color: #000000;
+    font-size: 24.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 400;
+    text-align: left;
+}

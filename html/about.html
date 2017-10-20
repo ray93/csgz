@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>创思感知</title>
+
+  <link rel="stylesheet" href="../lib/normalize.css">
+  <link rel="stylesheet" href="../lib/element-ui/index.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/about.css">
+</head>
+
+<body>
+  <div class="main">
+    <!-- 顶部logo及菜单 -->
+    <header>
+      <div id="logo" class="borderbox">
+        <img src="../img/logo.png" alt="logo">
+      </div>
+      <div class="menu-group">
+        <ul class="noStyle menu-ul">
+          <li class="inline">
+            <a class="noStyle inline menu-item" href="#">首页</a>
+          </li>
+          <li class="inline">
+            <a class="noStyle inline menu-item" href="#">产品中心</a>
+          </li>
+          <li class="inline">
+            <a class="noStyle inline menu-item" href="#">解决方案</a>
+          </li>
+          <li class="inline">
+            <a class="noStyle inline menu-item" href="#">合作客户</a>
+          </li>
+          <li class="inline">
+            <a class="noStyle inline menu-item" href="#">商家登陆</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 内容 -->
+    <div class="content" id="app">
+      <!-- banner -->
+      <div class="about_banner" id="about_banner">
+        <img src="../img/about/about_banner.png" alt="关于公司">
+      </div>
+
+      <div class="about_row">
+        <el-row :gutter="50">
+          <el-col :span="12">
+            <div class="grid-content">
+              <div class="gird_img">
+                <img src="../img/about/gird01.png" alt="我们是谁">
+                <span></span>
+              </div>
+              <div class="gird_title">
+                <h1>我们是谁？</h1>
+              </div>
+              <div class="gird_content">
+                <p>无锡创思感知科技有限公司创立于2013年，是一家专业从事“智慧零售解决方案和平台”的“互联网+物联网”创业公司。其总部位于无锡，并在上海、北京、广州等地设有分支机构，是全球领先的零售行业全渠道营销解决方案提供商。</p>
+              </div>
+            </div>
+          </el-col>
+          <el-col :span="12">
+            <div class="grid-content">
+              <div class="gird_img">
+                <img src="../img/about/gird02.png" alt="我们在做什么">
+                <span></span>
+              </div>
+              <div class="gird_title">
+                <h1>我们在做什么？</h1>
+              </div>
+              <div class="gird_content">
+                <p>专注于利用新一代物联网和大数据技术，帮助实体商业零售打造体验购物环境，通过收集消费行为数据指导营销活动，实现O2O全渠道营销。</p>
+              </div>
+            </div>
+          </el-col>
+        </el-row>
+        <el-row :gutter="50">
+          <el-col :span="12">
+            <div class="grid-content">
+              <div class="gird_img">
+                <img src="../img/about/gird03.png" alt="我们为谁服务">
+                <span></span>
+              </div>
+              <div class="gird_title">
+                <h1>我们为谁服务？</h1>
+              </div>
+              <div class="gird_content">
+                <p>目前，我司已经和众多商业连锁品牌进行了合作，包括：GAP、梦芭莎、FivePlus、通灵珠宝、香奈儿、九方等，在实体商业O2O解决方案提供商中处于市场领先位置。</p>
+              </div>
+            </div>
+          </el-col>
+          <el-col :span="12">
+            <div class="grid-content">
+              <div class="gird_img">
+                <img src="../img/about/gird04.png" alt="我们有什么特别">
+                <span></span>
+              </div>
+              <div class="gird_title">
+                <h1>我们有什么特别？</h1>
+              </div>
+              <div class="gird_content">
+                <p>公司创始团队汇集了云计算、人脸识别、视频客流、大数据分析、人机交互、市场营销等专业人才，与一般软件公司相比，在给实体商业提供服务的时候，具备更前沿的互联网技术、更丰富的商业经验、更精准的数据分析等优势。</p>
+              </div>
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+
+      <div class="borderbox item">
+        <div class="borderbox inline stfont title">
+          <ul>
+            <li class="litop"> 创思发展历程</li>
+            <li class="libottom"> 一路前行只为更好的零售体验</li>
+          </ul>
+        </div>
+        <div class="timeline">
+          <img src="../img/about/timeline.png" alt="时间轴">
+          <br>
+          <img src="../img/about/shop.png" alt="智慧商店">
+          <br>
+          <span>打造国内新零售智慧门店NO.1服务商</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="borderbox">
+      <div class="link-group clear">
+        <div class="links-item">
+          <p class="link-title">商户支持</p>
+          <a href="#" class="noStyle block link">产品中心</a>
+          <a href="#" class="noStyle block link">解决方案</a>
+        </div>
+        <div class="links-item">
+          <p class="link-title">商户合作</p>
+          <a href="#" class="noStyle block link">联系我们</a>
+          <a href="#" class="noStyle block link">合作客户</a>
+        </div>
+        <div class="links-item">
+          <p class="link-title">关于我们</p>
+          <a href="#" class="noStyle block link">公司介绍</a>
+          <a href="#" class="noStyle block link">媒体报道</a>
+        </div>
+        <div class="links-item">
+          <p class="link-title">公司站点</p>
+          <a href="#" class="noStyle block link">互动游戏平台</a>
+          <a href="#" class="noStyle block link">行为分析平台</a>
+        </div>
+        <div class="links-item wx">
+          <img src="../img/wx.png" alt="微信公众号">
+          <br>
+          <span>关注我们的公众号</span>
+        </div>
+      </div>
+      <div class="hr1"></div>
+      <div class="inline copy">Copyright &copy; 无锡创思感知科技有限公司 All Rights Reserverd .苏ICP备13045243号-1</div>
+      <div id="toTop" class="pointer">
+        <img src="../img/totop.png" alt="返回顶部">
+      </div>
+    </footer>
+  </div>
+
+  <script src="../lib/vue/vue.js"></script>
+  <script src="../lib/element-ui/index.js"></script>
+  <script src="../js/about.js"></script>
+</body>
+
+</html>
