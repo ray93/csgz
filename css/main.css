@@ -136,7 +136,7 @@ a.noStyle {
   height: 154px;
   box-sizing: border-box;
   padding: 17px 13px 21px;
-  background: #ffffff;
+  background: url('../img/product-bg.png');
 }
 
 .menu-group #product-menu .product-type {
