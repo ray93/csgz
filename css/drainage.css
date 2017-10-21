@@ -1,0 +1,340 @@
+.content .banner {
+  width: 100%;
+  height: 440px;
+}
+
+.content .item {
+  width: 100%;
+  padding: 40px 210px 50px;
+}
+
+.content .title {
+  padding-left: 20px;
+  color: #333333;
+  font-size: 36.0px;
+  height: 50px;
+  line-height: 50px;
+  border-left: 4px solid #13a2e0;
+}
+
+.content .more {
+  height: 28px;
+  line-height: 28px;
+  padding-right: 38px;
+  background: url('../img/index/more_normal.png') right center no-repeat;
+  float: right;
+}
+
+.content .more:hover {
+  background-image: url('../img/index/more_pressed.png');
+}
+
+
+/* 了解更多 */
+
+.content .item-more {
+  height: 252px;
+  background: #fbfbfd;
+}
+
+.content .item-more .text {
+  margin: 30px auto;
+  color: #666666;
+  font-size: 24.0px;
+  text-align: center;
+  height: 33px;
+  line-height: 33px;
+}
+
+.content .item-more .more-btn {
+  margin: 0 auto;
+  width: 160px;
+  height: 48px;
+  background: #13a2e0;
+  border-radius: 24px;
+  line-height: 48px;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/* 其他样式 */
+
+
+/* 女王驾到 */
+
+.content .item-menu {
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+
+.content .item-banner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.content .item-overview {
+  padding-bottom: 0;
+}
+
+.content .item-overview .overview-content {
+  margin-top: 46px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content .item-overview .overview-content .overview-item {
+  width: 450px;
+  height: 180px;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  background: #ffffff;
+  margin-bottom: 40px;
+}
+
+.content .item-overview .overview-content .overview-item .icomargin {
+  width: 162px;
+  height: 180px;
+  position: relative;
+}
+
+.content .item-overview .overview-content .overview-item .textmargin {
+  width: 284px;
+  height: 180px;
+  float: right;
+}
+
+.content .item-overview .overview-content .overview-item .textmargin .overview-title {
+  height: 33px;
+  line-height: 33px;
+  color: #333333;
+  font-size: 24.0px;
+  margin: 39px 0 20px;
+}
+
+.content .item-overview .overview-content .overview-item .textmargin .overview-text {
+  line-height: 22px;
+  color: #535353;
+  font-size: 18.0px;
+}
+
+.content .item-process .exponent-margin {
+  margin-top: 29px;
+}
+
+.content .item-process .step-margin {
+  margin-bottom: 31px;
+  margin-top: 36px;
+  height: 600px;
+  position: relative;
+}
+
+.content .item-process .step-margin>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content .item-process .step-margin>span {
+  position: absolute;
+  left: 90px;
+  height: 33px;
+  line-height: 33px;
+  color: #666666;
+  font-size: 24.0px;
+}
+
+.content .item-process .step-margin>span.step-ends {
+  height: 40px;
+  line-height: 40px;
+  color: #333333;
+  font-size: 28.0px;
+}
+
+.content .item-process .step-margin>span#step-1 {
+  top: 10px;
+}
+
+.content .item-process .step-margin>span#step-2 {
+  top: 125px;
+}
+
+.content .item-process .step-margin>span#step-3 {
+  top: 231px;
+}
+
+.content .item-process .step-margin>span#step-4 {
+  top: 337px;
+}
+
+.content .item-process .step-margin>span#step-5 {
+  top: 443px;
+}
+
+.content .item-process .step-margin>span#step-6 {
+  bottom: 10px;
+}
+
+
+/* 多互动游戏 */
+
+.content .classification-content {
+  width: 1366px;
+  margin-left: -210px;
+}
+
+.content .classification-content .classification-item {
+  height: 413px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content .classification-content .classification-item>.item-text {
+  width: 289px;
+  height: 234px;
+  text-align: center;
+}
+
+.content .classification-content .classification-item>img {
+  margin-left: 68px;
+  margin-right: 210px;
+}
+
+.content .classification-content .classification-item .item-text .classification-title {
+  height: 40px;
+  line-height: 40px;
+  color: #333333;
+  font-size: 28.0px;
+  margin: 20px 0 18px;
+}
+
+.content .classification-content .classification-item .item-text .classification-content {
+  margin: 0 auto;
+  color: #666666;
+  line-height: 20px;
+  font-size: 16.0px;
+  width: 100%;
+}
+
+.content .classification-content .classification-item.hasbg {
+  background: #fbfbfd;
+  justify-content: flex-start;
+}
+
+.content .classification-content .classification-item.hasbg>.item-text {
+  order: 2;
+  margin: 0;
+}
+
+.content .classification-content .classification-item.hasbg>img {
+  order: 1;
+  margin-left: 210px;
+  margin-right: 68px;
+}
+
+
+/* 智能硬件 */
+
+.content .adaptation1 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.content .adaptation1>img {
+  margin: 0 150px 0 274px;
+  float: left;
+}
+
+.content .adaptation1>.adaptation-description {
+  height: 510px;
+  width: 308px;
+  float: left;
+  text-align: center;
+}
+
+.content .adaptation-description .subtitle {
+  height: 40px;
+  line-height: 40px;
+  color: #333333;
+  font-size: 28.0px;
+  margin: 83px auto 18px;
+}
+
+.content .adaptation-description .text {
+  color: #666666;
+  line-height: 20px;
+  font-size: 16.0px;
+  height: 56px;
+  margin-bottom: 66px;
+}
+
+.content .adaptation-description .img-group>img:nth-child(1) {
+  margin-right: 88px;
+}
+
+.content .adaptation2 {
+  background: #fbfbfd;
+  height: 514px;
+}
+
+.content .adaptation2>img {
+  margin-left: 90px;
+  margin-top: 64px;
+  float: left;
+}
+
+.content .adaptation2>.adaptation-description {
+  height: 510px;
+  width: 308px;
+  margin-left: 260px;
+  float: left;
+  text-align: center;
+}
+
+.content .adaptation2>.adaptation-description .subtitle {
+  margin-top: 136px;
+}
+
+.content .adaptation2>.adaptation-description .img-group>img:nth-child(1) {
+  margin-right: 85px;
+}
+
+.content .details {
+  margin: 80px auto;
+  text-align: center;
+}
+
+.content .details>.detail-item {
+  width: 276px;
+  height: 244px;
+  text-align: center;
+}
+
+.content .details>.detail-item:nth-child(1) {
+  margin-right: 180px;
+}
+
+.content .details .img-description {
+  height: 22px;
+  color: #666666;
+  line-height: 22px;
+  font-size: 16.0px;
+  margin: 11px auto 50px;
+}
+
+.content .details .detail-item-subtitle {
+  height: 26px;
+  line-height: 26px;
+  margin-bottom: 4px;
+  color: #333333;
+  font-size: 20.0px;
+}
+
+.content .details .detail-item-text {
+  color: #535353;
+  font-size: 12.0px;
+  line-height: 16px;
+}

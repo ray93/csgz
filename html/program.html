@@ -7,7 +7,6 @@
   <title>创思感知</title>
 
   <link rel="stylesheet" href="../lib/normalize.css">
-  <link rel="stylesheet" href="../lib/element-ui/index.css">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/program.css">
 </head>
@@ -72,8 +71,48 @@
           <div class="control pointer stfont" :class="[isOpen?'open':'close']" @click="isOpen = !isOpen">功能说明</div>
           <div class="clearRight"></div>
           <div class="program-img">
-            <img :src="isOpen?'../img/index/troncell-open.png':'../img/index/troncell.png'" alt="智慧门店解决方案">
-          </div>
+              <img src="../img/index/troncell.png" alt="智慧门店解决方案">
+              <div class="pointer point" id="point-1">
+                <div class="point-circle-white"></div>
+                <div class="point-circle-color"></div>
+                <div class="stfont point-text" :class="{allshow:isOpen}">智能魔镜</div>
+              </div>
+              <div class="pointer point" id="point-2">
+                <div class="point-circle-white"></div>
+                <div class="point-circle-color"></div>
+                <div class="stfont point-text" :class="{allshow:isOpen}">商品关注统计</div>
+              </div>
+              <div class="pointer point" id="point-3">
+                <div class="point-circle-white"></div>
+                <div class="point-circle-color"></div>
+                <div class="stfont point-text" :class="{allshow:isOpen}">智能云货架</div>
+              </div>
+              <div class="pointer point" id="point-4">
+                <div class="point-circle-white"></div>
+                <div class="point-circle-color"></div>
+                <div class="stfont point-text" :class="{allshow:isOpen}">智能导购</div>
+              </div>
+              <div class="pointer point" id="point-5">
+                <div class="point-circle-white"></div>
+                <div class="point-circle-color"></div>
+                <div class="stfont point-text" :class="{allshow:isOpen}">游戏引流</div>
+              </div>
+              <div class="pointer point" id="point-6">
+                <div class="point-circle-white"></div>
+                <div class="point-circle-color"></div>
+                <div class="stfont point-text" :class="{allshow:isOpen}">客流统计</div>
+              </div>
+              <div class="pointer point" id="point-7">
+                <div class="point-circle-white"></div>
+                <div class="point-circle-color"></div>
+                <div class="stfont point-text" :class="{allshow:isOpen}">基准广告营销</div>
+              </div>
+              <div class="pointer point" id="point-8">
+                <div class="point-circle-white"></div>
+                <div class="point-circle-color"></div>
+                <div class="stfont point-text" :class="{allshow:isOpen}">客户身份识别</div>
+              </div>
+            </div>
         </div>
       </div>
       <div class="borderbox item service">
@@ -97,7 +136,7 @@
       </div>
       <div class="borderbox item item-more">
         <div class="stfont text">如果你想了解更多行业解决方案，请点击下面</div>
-        <div class="stfont more-btn">了解更多</div>
+        <div class="stfont pointer more-btn">了解更多</div>
       </div>
     </div>
     <!-- 页脚 -->
@@ -137,8 +176,7 @@
   </div>
 
   <script src="../lib/vue/vue.js"></script>
-  <script src="../lib/element-ui/index.js"></script>
-  <script src="../js/index.js"></script>
+  <script src="../js/program.js"></script>
 </body>
 
 </html>

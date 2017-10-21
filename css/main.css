@@ -66,6 +66,20 @@ a.noStyle {
   clear: left;
 }
 
+.imgCenter {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.fontSize0 {
+  font-size: 0;
+}
+
+
 /* 以下为页面样式 */
 
 #logo {
@@ -122,7 +136,7 @@ a.noStyle {
   height: 154px;
   box-sizing: border-box;
   padding: 17px 13px 21px;
-  background: #ffffff;
+  background: url('../img/product-bg.png');
 }
 
 .menu-group #product-menu .product-type {
