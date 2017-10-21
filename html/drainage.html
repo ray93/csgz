@@ -58,23 +58,149 @@
           </div>
         </div>
       </div>
+      <div class="borderbox item fontSize0 item-banner" v-if="selectedType!=='hardware'">
+        <img :src="getImage" alt="">
+      </div>
       <div v-show="selectedType==='queen'">
-        <div class="borderbox item item-banner">
-          <img src="../img/drainage/sub-banner.png" alt="">
-        </div>
         <div class="borderbox item item-overview">
           <div class="borderbox inline stfont title">
             感知互动游戏概述
           </div>
           <div class="borderbox overview-content">
-
+            <div class="borderbox overview-item">
+              <div class="inline icomargin">
+                <img class="imgCenter" src="../img/drainage/interaction-ico.png" alt="">
+              </div>
+              <div class="inline textmargin">
+                <div class="stfont overview-title">增加趣味体验</div>
+                <div class="stfont overview-text">采用体感交互、AR增强现实等技术给用户提</div>
+              </div>
+            </div>
+            <div class="borderbox overview-item">
+              <div class="inline icomargin">
+                <img class="imgCenter" src="../img/drainage/wx-ico.png" alt="">
+              </div>
+              <div class="inline textmargin">
+                <div class="stfont overview-title">微信社交功能</div>
+                <div class="stfont overview-text">游戏的同时，将酷炫的场景秀给朋友分享快乐</div>
+              </div>
+            </div>
+            <div class="borderbox overview-item">
+              <div class="inline icomargin">
+                <img class="imgCenter" src="../img/drainage/popularity-ico.png" alt="">
+              </div>
+              <div class="inline textmargin">
+                <div class="stfont overview-title">吸引现场人气</div>
+                <div class="stfont overview-text">高校微信加粉，通过朋友圈传播知名度</div>
+              </div>
+            </div>
+            <div class="borderbox overview-item">
+              <div class="inline icomargin">
+                <img class="imgCenter" src="../img/drainage/viscosity-ico.png" alt="">
+              </div>
+              <div class="inline textmargin">
+                <div class="stfont overview-title">提高用户粘性</div>
+                <div class="stfont overview-text">通过游戏发放积分优惠券，结合奖品兑换活动</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="borderbox item item-process">
+          <div class="borderbox inline stfont title">
+            女王驾到游戏流程
+          </div>
+          <div class="borderbox process-content">
+            <div class="fontSize0 exponent-margin">
+              <img src="../img/drainage/exponent.png" alt="">
+            </div>
+            <div class="step-margin">
+              <img src="../img/drainage/timeline.png" alt="">
+              <span class="inline stfont step-ends" id="step-1">游戏开始</span>
+              <span class="inline stfont" id="step-2">有趣的虚拟皇冠饰品场景</span>
+              <span class="inline stfont" id="step-3">剪刀手POSE，软件自动抓拍</span>
+              <span class="inline stfont" id="step-4">用户微信扫码获得照片H5页面</span>
+              <span class="inline stfont" id="step-5">长按保存照片，同时获取优惠券，进店可用券</span>
+              <span class="inline stfont step-ends" id="step-6">游戏完成</span>
+            </div>
           </div>
         </div>
       </div>
       <div v-show="selectedType==='more'">
+        <div class="borderbox item item-classification">
+          <div class="borderbox inline stfont title">
+            感知互动游戏产品分类
+          </div>
+          <div class="inline pointer more">
+            查看更多
+          </div>
+          <div class="classification-content">
+            <div class="classification-item">
+              <div class="item-text">
+                <img src="../img/drainage/photo-ico.png" alt="">
+                <div class="stfont classification-title">拍照类</div>
+                <div class="stfont classification-content">所见即所得，沉浸式体验，<br>增强现实场景，一“剪”自拍。</div>
+              </div>
+              <img src="../img/drainage/photo-type.png" alt="">
+            </div>
+            <div class="classification-item hasbg">
+              <div class="item-text">
+                <img src="../img/drainage/sport-ico.png" alt="">
+                <div class="stfont classification-title">竞技类</div>
+                <div class="stfont classification-content">商品植入，更具竞技性，<br>多玩家轮流PK，支持排行榜。</div>
+              </div>
+              <img src="../img/drainage/sport-type.png" alt="">
+            </div>
+            <div class="classification-item">
+              <div class="item-text">
+                <img src="../img/drainage/lottery-ico.png" alt="">
+                <div class="stfont classification-title">抽奖类</div>
+                <div class="stfont classification-content">在线注册报名，扫码签到显示头像，<br>互动弹幕大乱聊，激动人心抽奖。</div>
+              </div>
+              <img src="../img/drainage/lottery-type.png" alt="">
+            </div>
+          </div>
+        </div>
         <div class="borderbox item item-more">
-          <div class="stfont text">如果你想了解更多行业解决方案，请点击下面</div>
+          <div class="stfont text">如果你对互动游戏感兴趣，请点击下面</div>
           <div class="stfont pointer more-btn">了解更多</div>
+        </div>
+      </div>
+      <div v-show="selectedType==='hardware'">
+        <div class="adaptation1 fontSize0 clear">
+          <img src="../img/drainage/somatosensory.png" alt="">
+          <div class="adaptation-description">
+            <div class="stfont subtitle">kinect体感互动</div>
+            <div class="stfont text">新奇的体感感受，<br>超乎想象的准确精度。</div>
+            <div class="img-group">
+              <img src="../img/drainage/game-ico.png" alt="">
+              <img src="../img/drainage/accurate-ico.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="adaptation2 fontSize0 clear">
+          <div class="adaptation-description">
+            <div class="stfont subtitle">适配各种显示器型号</div>
+            <div class="stfont text">液晶、拼接、投影各类大屏均可承载，<br>适配支持1080P的各尺寸显示器。</div>
+            <div class="img-group">
+              <img src="../img/drainage/led-ico.png" alt="">
+              <img src="../img/drainage/screens-ico.png" alt="">
+            </div>
+          </div>
+          <img src="../img/drainage/HD.png" alt="">
+        </div>
+        <div class="details">
+          <div class="inline detail-item">
+            <img src="../img/drainage/exponent-ico.png" alt="">
+            <div class="stfont img-description">kinect体感互动</div>
+            <div class="stfont detail-item-subtitle">全新的体验感受</div>
+            <div class="stfont detail-item-text">不用任何按键，就可以选择好各种选项并进入游戏，精度超乎想象。</div>
+          </div>
+          <div class="inline detail-item">
+            <img src="../img/drainage/nuc-ico.png" alt="">
+            <div class="stfont img-description">NUC套件</div>
+            <div class="stfont detail-item-subtitle">睿频加速更少等待时间</div>
+            <div class="stfont detail-item-text">intel4代以上I3、I5处理器搭载睿频加速技术，超强处理能力和响应速度。</div>
+          </div>
         </div>
       </div>
     </div>

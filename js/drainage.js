@@ -3,12 +3,17 @@
     el: '#app',
     data: function () {
       return {
-        selectedType: 'queen',
+        selectedType: 'hardware',
       }
     },
     methods: {
       changeSelected: function (type) {
         this.selectedType = type
+      }
+    },
+    computed: {
+      getImage() {
+        return `../img/drainage/${this.selectedType}-banner.png`
       }
     }
   })
