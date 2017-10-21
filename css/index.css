@@ -265,7 +265,7 @@
   height: auto;
 }
 
-.content .grid-content.bg-purple.brand-item {
+.content .bg-purple.brand-item {
   height: 110px;
   cursor: pointer;
   background-position: center center;
