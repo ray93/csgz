@@ -2,30 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>创思感知</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>创思感知</title>
 
-    <link rel="stylesheet" href="../lib/normalize.css">
-    <link rel="stylesheet" href="../lib/element-ui/index.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/shop.css">
+  <link rel="stylesheet" href="../lib/normalize.css">
+  <link rel="stylesheet" href="../lib/element-ui/index.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/shop.css">
 </head>
 
 <body>
-    <div class="main">
-        <!-- 顶部logo及菜单 -->
-        <header>
-            <div id="logo" class="borderbox">
-                <img src="../img/logo.png" alt="logo">
-            </div>
-            <div class="menu-group">
-                <ul class="noStyle menu-ul">
-                    <li class="inline">
-                        <a class="noStyle inline menu-item" href="#">首页</a>
-                    </li>
-                    <li class="inline">
-                        <a class="noStyle inline menu-product menu-item selected" href="#">
+  <div class="main">
+    <!-- 顶部logo及菜单 -->
+    <header>
+      <div id="logo" class="borderbox">
+        <img src="../img/logo.png" alt="logo">
+      </div>
+      <div class="menu-group">
+        <ul class="noStyle menu-ul">
+          <li class="inline">
+            <a class="noStyle inline menu-item" href="#">首页</a>
+          </li>
+          <li class="inline">
+            <a class="noStyle inline menu-product menu-item selected" href="#">
                             <span>产品中心</span>
                             <div id="product-menu">
                                 <div class="stfont product-type ">引流应用</div>
@@ -35,270 +35,266 @@
                                 <div class="stfont product-type selected">行为分析</div>
                             </div>
                         </a>
-                    </li>
-                    <li class="inline">
-                        <a class="noStyle inline menu-item" href="#">解决方案</a>
-                    </li>
-                    <li class="inline">
-                        <a class="noStyle inline menu-item" href="#">合作客户</a>
-                    </li>
-                    <li class="inline">
-                        <a class="noStyle inline menu-item" href="#">商家登陆</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
+          </li>
+          <li class="inline">
+            <a class="noStyle inline menu-item" href="#">解决方案</a>
+          </li>
+          <li class="inline">
+            <a class="noStyle inline menu-item" href="#">合作客户</a>
+          </li>
+          <li class="inline">
+            <a class="noStyle inline menu-item" href="#">商家登陆</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-        <!-- 内容 -->
-        <div class="content" id="app">
-            <!-- banner -->
-            <div class="shop_banner">
-                <img src="../img/shop/shop_banner.png" alt="">
-            </div>
+    <!-- 内容 -->
+    <div class="content" id="app">
+      <!-- banner -->
+      <div class="shop_banner">
+        <img src="../img/shop/shop_banner.png" alt="">
+      </div>
 
-            <div class="borderbox item item-menu">
-                <div class="horizontal-menu">
-                    <div class="borderbox pointer stfont menu-item" :class="{selected:selectedType==='virtualcloud'}" @click="changeSelected('virtualcloud')">
-                        <div>虚拟云货架</div>
-                    </div>
-                    <div class="menu-br"></div>
-                    <div class="borderbox pointer stfont menu-item" :class="{selected:selectedType==='interactcloud'}" @click="changeSelected('interactcloud')">
-                        <div>互动云货架</div>
-                    </div>
-                    <div class="menu-br"></div>
-                    <div class="borderbox pointer stfont menu-item" :class="{selected:selectedType==='hardware'}" @click="changeSelected('hardware')">
-                        <div>智能硬件</div>
-                    </div>
-                </div>
+      <div class="borderbox item item-menu">
+        <div class="horizontal-menu">
+          <div class="borderbox pointer stfont menu-item" :class="{selected:selectedType==='virtualcloud'}" @click="changeSelected('virtualcloud')">
+            <div>虚拟云货架</div>
+          </div>
+          <div class="menu-br"></div>
+          <div class="borderbox pointer stfont menu-item" :class="{selected:selectedType==='interactcloud'}" @click="changeSelected('interactcloud')">
+            <div>互动云货架</div>
+          </div>
+          <div class="menu-br"></div>
+          <div class="borderbox pointer stfont menu-item" :class="{selected:selectedType==='hardware'}" @click="changeSelected('hardware')">
+            <div>智能硬件</div>
+          </div>
+        </div>
+      </div>
+      <div v-show="selectedType==='virtualcloud'">
+        <div class="borderbox item">
+          <div class="borderbox inline stfont title">
+            产品特色
+          </div>
+          <div class="borderbox overview-content">
+            <div class="borderbox overview-item content-item01">
+              <div class="inline textmargin">
+                <div style="color:#ffffff" class="stfont overview-title">扫码查询</div>
+                <div style="color:#80BAB2" class="stfont overview-text">利用二维码高效购物</div>
+              </div>
             </div>
-            <div v-show="selectedType==='virtualcloud'">
-                <div class="borderbox item">
-                    <div class="borderbox inline stfont title">
-                        产品特色
-                    </div>
-                    <div class="borderbox overview-content">
-                        <div class="borderbox overview-item content-item01">
-                            <div class="inline textmargin">
-                                <div style="color:#ffffff" class="stfont overview-title">扫码查询</div>
-                                <div style="color:#80BAB2" class="stfont overview-text">利用二维码高效购物</div>
-                            </div>
-                        </div>
-                        <div class="borderbox overview-item content-item02">
-                            <div class="inline textmargin">
-                                <div class="stfont overview-title">热款推荐</div>
-                                <div class="stfont overview-text">紧跟新潮时尚步伐</div>
-                            </div>
-                        </div>
-                        <div class="borderbox overview-item content-item03">
-                            <div class="inline textmargin">
-                                <div class="stfont overview-title">智能搭配</div>
-                                <div class="stfont overview-text">推荐最优搭配方案</div>
-                            </div>
-                        </div>
-                        <div class="borderbox overview-item content-item04">
-                            <div class="inline textmargin">
-                                <div style="color:#ffffff" class="stfont overview-title">在线订购</div>
-                                <div style="color:#AAE4FF" class="stfont overview-text">对接商家在线购买</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 产品功能 -->
-                <div class="borderbox item product-function">
-                    <div class="borderbox inline stfont title">
-                        产品功能
-                    </div>
-                </div>
-                <div class="borderbox product-function">
-                    <div class="function-module">
-                        <div class="module-content">
-                            <img src="../img/shop/vitrualcloud/product/picture01.png" alt="">
-                        </div>
-                        <div class="module-content">
-                            <img src="../img/shop/vitrualcloud/product/ico01.png" alt="">
-                            <p class="moudule-content-title">智能交互</p>
-                            <p class="moudule-content-content">无人时品牌广告展示，
-                                <br />有人时展示交互界面。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="borderbox product-function greybg">
-                    <div class="function-module">
-                        <div class="module-content">
-                            <img src="../img/shop/vitrualcloud/product/ico02.png" alt="">
-                            <p class="moudule-content-title">领优惠券</p>
-                            <p class="moudule-content-content">领取优惠券、扫码购或加入购物车。</p>
-                        </div>
-                        <div class="module-content">
-                            <img src="../img/shop/vitrualcloud/product/picture02.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="borderbox product-function">
-                    <div class="function-module">
-                        <div class="module-content">
-                            <img src="../img/shop/vitrualcloud/product/picture03.png" alt="">
-                        </div>
-                        <div class="module-content">
-                            <img src="../img/shop/vitrualcloud/product/ico03.png" alt="">
-                            <p class="moudule-content-title">推荐搭配</p>
-                            <p class="moudule-content-content">商品智能搭配、相似款推荐。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="borderbox product-function greybg">
-                    <div class="function-module greybg">
-                        <div class="module-content">
-                            <img src="../img/shop/vitrualcloud/product/ico04.png" alt="">
-                            <p class="moudule-content-title">快速筛选</p>
-                            <p class="moudule-content-content">通过筛选工具快速找到自己需要的商品。</p>
-                        </div>
-                        <div class="module-content">
-                            <img src="../img/shop/vitrualcloud/product/picture04.png" alt="">
-                        </div>
-                    </div>
-                </div>
+            <div class="borderbox overview-item content-item02">
+              <div class="inline textmargin">
+                <div class="stfont overview-title">热款推荐</div>
+                <div class="stfont overview-text">紧跟新潮时尚步伐</div>
+              </div>
             </div>
-            <div v-show="selectedType==='interactcloud'">
-                <div class="borderbox item">
-                    <img src="../img/shop/interactcloud/banner.png" alt="">
-                </div>
-                <!-- 产品功能 -->
-                <div class="borderbox item product-function">
-                    <div class="borderbox inline stfont title">
-                        智能感应货架体验流程
-                    </div>
-                </div>
-                <div class="borderbox product-function">
-                    <div class="function-module">
-                        <div class="module-content">
-                            <img src="../img/shop/interactcloud/picture01.png" alt="">
-                        </div>
-                        <div class="module-content">
-                            <img src="../img/shop/interactcloud/ico01.png" alt="">
-                            <p class="moudule-content-title">智能广告</p>
-                            <p class="moudule-content-content">无人时品牌广告展示，
-                                <br /> 有人时展示交互界面。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="borderbox product-function greybg">
-                    <div class="function-module">
-                        <div class="module-content">
-                            <img src="../img/shop/interactcloud/ico02.png" alt="">
-                            <p class="moudule-content-title">感应购物</p>
-                            <p class="moudule-content-content">顾客自助查询商品信息、同款推荐等功能。
-                            </p>
-                        </div>
-                        <div class="module-content">
-                            <img src="../img/shop/interactcloud/picture02.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="borderbox product-function">
-                    <div class="function-module">
-                        <div class="module-content">
-                            <img src="../img/shop/interactcloud/picture03.png" alt="">
-                        </div>
-                        <div class="module-content">
-                            <img src="../img/shop/interactcloud/ico03.png" alt="">
-                            <p class="moudule-content-title">自助查询</p>
-                            <p class="moudule-content-content">顾客拿一款手表标签可自助查询商品信息，
-                                <br />智能货架上的手表拿起时自动感应显示商品信息。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="borderbox product-function greybg">
-                    <div class="function-module">
-                        <div class="module-content">
-                            <img src="../img/shop/interactcloud/ico04.png" alt="">
-                            <p class="moudule-content-title">领优惠券</p>
-                            <p class="moudule-content-content">领取优惠券、扫码购或加入购物车。
-                            </p>
-                        </div>
-                        <div class="module-content">
-                            <img src="../img/shop/interactcloud/picture04.png" alt="">
-                        </div>
-                    </div>
-                </div>
+            <div class="borderbox overview-item content-item03">
+              <div class="inline textmargin">
+                <div class="stfont overview-title">智能搭配</div>
+                <div class="stfont overview-text">推荐最优搭配方案</div>
+              </div>
             </div>
-            <div v-show="selectedType==='hardware'">
-                <div class="borderbox item product-function">
-                    <div class="borderbox inline stfont double-title">
-                        <ul>
-                            <li class="litop"> 站立式硬件设计</li>
-                            <li class="libottom"> Integrated Machine Design</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="borderbox product-function hardware">
-                    <img src="../img/shop/hardware/hardware01.png" alt="">
-                </div>
-                <div class="borderbox product-function hardware greybg">
-                    <img src="../img/shop/hardware/hardware02.png" alt="">
-                </div>
-                <div class="borderbox item product-function">
-                    <div style="margin-top:50px" class="borderbox inline stfont double-title">
-                        <ul>
-                            <li class="litop"> 嵌入式硬件设计</li>
-                            <li class="libottom">Overview of Digital Screen</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="borderbox product-function hardware">
-                    <img src="../img/shop/hardware/hardware03.png" alt="">
-                </div>
-                <div class="borderbox product-function hardware greybg">
-                    <img src="../img/shop/hardware/hardware04.png" alt="">
-                </div>
+            <div class="borderbox overview-item content-item04">
+              <div class="inline textmargin">
+                <div style="color:#ffffff" class="stfont overview-title">在线订购</div>
+                <div style="color:#AAE4FF" class="stfont overview-text">对接商家在线购买</div>
+              </div>
             </div>
+          </div>
         </div>
 
-
+        <!-- 产品功能 -->
+        <div class="borderbox item product-function">
+          <div class="borderbox inline stfont title">
+            产品功能
+          </div>
+        </div>
+        <div class="borderbox product-function">
+          <div class="function-module">
+            <div class="module-content">
+              <img src="../img/shop/vitrualcloud/product/picture01.png" alt="">
+            </div>
+            <div class="module-content">
+              <img src="../img/shop/vitrualcloud/product/ico01.png" alt="">
+              <p class="moudule-content-title">智能交互</p>
+              <p class="moudule-content-content">无人时品牌广告展示，
+                <br />有人时展示交互界面。</p>
+            </div>
+          </div>
+        </div>
+        <div class="borderbox product-function greybg">
+          <div class="function-module">
+            <div class="module-content">
+              <img src="../img/shop/vitrualcloud/product/ico02.png" alt="">
+              <p class="moudule-content-title">领优惠券</p>
+              <p class="moudule-content-content">领取优惠券、扫码购或加入购物车。</p>
+            </div>
+            <div class="module-content">
+              <img src="../img/shop/vitrualcloud/product/picture02.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="borderbox product-function">
+          <div class="function-module">
+            <div class="module-content">
+              <img src="../img/shop/vitrualcloud/product/picture03.png" alt="">
+            </div>
+            <div class="module-content">
+              <img src="../img/shop/vitrualcloud/product/ico03.png" alt="">
+              <p class="moudule-content-title">推荐搭配</p>
+              <p class="moudule-content-content">商品智能搭配、相似款推荐。</p>
+            </div>
+          </div>
+        </div>
+        <div class="borderbox product-function greybg">
+          <div class="function-module greybg">
+            <div class="module-content">
+              <img src="../img/shop/vitrualcloud/product/ico04.png" alt="">
+              <p class="moudule-content-title">快速筛选</p>
+              <p class="moudule-content-content">通过筛选工具快速找到自己需要的商品。</p>
+            </div>
+            <div class="module-content">
+              <img src="../img/shop/vitrualcloud/product/picture04.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-show="selectedType==='interactcloud'">
+        <div class="borderbox item">
+          <img src="../img/shop/interactcloud/banner.png" alt="">
+        </div>
+        <!-- 产品功能 -->
+        <div class="borderbox item product-function">
+          <div class="borderbox inline stfont title">
+            智能感应货架体验流程
+          </div>
+        </div>
+        <div class="borderbox product-function">
+          <div class="function-module">
+            <div class="module-content">
+              <img src="../img/shop/interactcloud/picture01.png" alt="">
+            </div>
+            <div class="module-content">
+              <img src="../img/shop/interactcloud/ico01.png" alt="">
+              <p class="moudule-content-title">智能广告</p>
+              <p class="moudule-content-content">无人时品牌广告展示，
+                <br /> 有人时展示交互界面。</p>
+            </div>
+          </div>
+        </div>
+        <div class="borderbox product-function greybg">
+          <div class="function-module">
+            <div class="module-content">
+              <img src="../img/shop/interactcloud/ico02.png" alt="">
+              <p class="moudule-content-title">感应购物</p>
+              <p class="moudule-content-content">顾客自助查询商品信息、同款推荐等功能。
+              </p>
+            </div>
+            <div class="module-content">
+              <img src="../img/shop/interactcloud/picture02.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="borderbox product-function">
+          <div class="function-module">
+            <div class="module-content">
+              <img src="../img/shop/interactcloud/picture03.png" alt="">
+            </div>
+            <div class="module-content">
+              <img src="../img/shop/interactcloud/ico03.png" alt="">
+              <p class="moudule-content-title">自助查询</p>
+              <p class="moudule-content-content">顾客拿一款手表标签可自助查询商品信息，
+                <br />智能货架上的手表拿起时自动感应显示商品信息。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="borderbox product-function greybg">
+          <div class="function-module">
+            <div class="module-content">
+              <img src="../img/shop/interactcloud/ico04.png" alt="">
+              <p class="moudule-content-title">领优惠券</p>
+              <p class="moudule-content-content">领取优惠券、扫码购或加入购物车。
+              </p>
+            </div>
+            <div class="module-content">
+              <img src="../img/shop/interactcloud/picture04.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-show="selectedType==='hardware'">
+        <div class="borderbox item product-function">
+          <div class="borderbox inline stfont double-title">
+            <ul>
+              <li class="litop"> 站立式硬件设计</li>
+              <li class="libottom"> Integrated Machine Design</li>
+            </ul>
+          </div>
+        </div>
+        <div class="borderbox product-function hardware">
+          <img src="../img/shop/hardware/hardware01.png" alt="">
+        </div>
+        <div class="borderbox product-function hardware greybg">
+          <img src="../img/shop/hardware/hardware02.png" alt="">
+        </div>
+        <div class="borderbox item product-function">
+          <div style="margin-top:50px" class="borderbox inline stfont double-title">
+            <ul>
+              <li class="litop"> 嵌入式硬件设计</li>
+              <li class="libottom">Overview of Digital Screen</li>
+            </ul>
+          </div>
+        </div>
+        <div class="borderbox product-function hardware">
+          <img src="../img/shop/hardware/hardware03.png" alt="">
+        </div>
+        <div class="borderbox product-function hardware greybg">
+          <img src="../img/shop/hardware/hardware04.png" alt="">
+        </div>
+      </div>
     </div>
 
     <!-- 页脚 -->
     <footer class="borderbox">
-        <div class="link-group clear">
-            <div class="links-item">
-                <p class="link-title">商户支持</p>
-                <a href="#" class="noStyle block link">产品中心</a>
-                <a href="#" class="noStyle block link">解决方案</a>
-            </div>
-            <div class="links-item">
-                <p class="link-title">商户合作</p>
-                <a href="#" class="noStyle block link">联系我们</a>
-                <a href="#" class="noStyle block link">合作客户</a>
-            </div>
-            <div class="links-item">
-                <p class="link-title">关于我们</p>
-                <a href="#" class="noStyle block link">公司介绍</a>
-                <a href="#" class="noStyle block link">媒体报道</a>
-            </div>
-            <div class="links-item">
-                <p class="link-title">公司站点</p>
-                <a href="#" class="noStyle block link">互动游戏平台</a>
-                <a href="#" class="noStyle block link">行为分析平台</a>
-            </div>
-            <div class="links-item wx">
-                <img src="../img/wx.png" alt="微信公众号">
-                <br>
-                <span>关注我们的公众号</span>
-            </div>
+      <div class="link-group clear">
+        <div class="links-item">
+          <p class="link-title">商户支持</p>
+          <a href="./drainage.html" class="noStyle block link">产品中心</a>
+          <a href="./program.html" class="noStyle block link">解决方案</a>
         </div>
-        <div class="hr1"></div>
-        <div class="inline copy">Copyright &copy; 无锡创思感知科技有限公司 All Rights Reserverd .苏ICP备13045243号-1</div>
-        <div id="toTop" class="pointer">
-            <img src="../img/totop.png" alt="返回顶部">
+        <div class="links-item">
+          <p class="link-title">商户合作</p>
+          <a href="./contact.html" class="noStyle block link">联系我们</a>
+          <a href="./cooperation.html" class="noStyle block link">合作客户</a>
         </div>
+        <div class="links-item">
+          <p class="link-title">关于我们</p>
+          <a href="./about.html" class="noStyle block link">公司介绍</a>
+          <a href="./news.html" class="noStyle block link">媒体报道</a>
+        </div>
+        <div class="links-item">
+          <p class="link-title">公司站点</p>
+          <a href="#" class="noStyle block link">互动游戏平台</a>
+          <a href="./behavioranalysis.html" class="noStyle block link">行为分析平台</a>
+        </div>
+        <div class="links-item wx">
+          <img src="../img/wx.png" alt="微信公众号"><br>
+          <span>关注我们的公众号</span>
+        </div>
+      </div>
+      <div class="hr1"></div>
+      <div class="inline copy">Copyright &copy; 无锡创思感知科技有限公司 All Rights Reserverd .苏ICP备13045243号-1</div>
+      <div id="toTop" class="pointer">
+        <img src="../img/totop.png" alt="返回顶部">
+      </div>
     </footer>
-    </div>
+  </div>
 
-    <script src="../lib/vue/vue.js"></script>
-    <script src="../lib/element-ui/index.js"></script>
-    <script src="../js/shop.js"></script>
+  <script src="../lib/vue/vue.js"></script>
+  <script src="../lib/element-ui/index.js"></script>
+  <script src="../js/shop.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
     el: '#app',
     data: function () {
       return {
-        selectedType: 'hardware',
+        selectedType: 'queen',
       }
     },
     methods: {
