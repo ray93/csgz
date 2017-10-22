@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>创思感知</title>
+
+  <link rel="stylesheet" href="../lib/normalize.css">
+  <link rel="stylesheet" href="../lib/element-ui/index.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/cooperation.css">
+</head>
+
+<body>
+  <div class="main">
+    <!-- 顶部logo及菜单 -->
+    <header>
+      <div id="logo" class="borderbox">
+        <img src="../img/logo.png" alt="logo">
+      </div>
+      <div class="menu-group">
+        <ul class="noStyle menu-ul">
+          <li class="inline"><a class="noStyle inline menu-item selected" href="#">首页</a></li>
+          <li class="inline"><a class="noStyle inline menu-product menu-item" href="#">
+            <span>产品中心</span>
+            <div id="product-menu">
+              <div class="stfont product-type">引流应用</div>
+              <div class="hr0"></div>
+              <div class="stfont product-type">购物应用</div>
+              <div class="hr0"></div>
+              <div class="stfont product-type">行为分析</div>
+            </div>
+          </a></li>
+          <li class="inline"><a class="noStyle inline menu-item" href="#">解决方案</a></li>
+          <li class="inline"><a class="noStyle inline menu-item" href="#">合作客户</a></li>
+          <li class="inline"><a class="noStyle inline menu-item" href="#">商家登陆</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- 内容 -->
+    <div class="content" id="app">
+      <div class="banner">
+        <img src="../img/cooperation/banner.png" alt="">
+      </div>
+      <div class="borderbox item cooperation">
+        <div class="horizontal-menu">
+          <div class="borderbox pointer stfont menu-item" :class="{selected:selectedType==='brands'}" @click="changeSelected('brands')">
+            <div>品牌合作</div>
+          </div>
+          <div class="menu-br"></div>
+          <div class="borderbox pointer stfont menu-item" :class="{selected:selectedType==='malls'}" @click="changeSelected('malls')">
+            <div>商场合作</div>
+          </div>
+        </div>
+        <div class="cooperation-brands">
+          <div class="brand-group">
+            <div class="brand-item" v-for="(item, index) in brands" :key="item.url" :style="{'background-image': getbg(item)}" @mouseover="item.isHover = true"
+              @mouseout="item.isHover = false">
+              <div class="brand-logo" :style="{'background-image': getImg(item)}"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 页脚 -->
+    <footer class="borderbox">
+      <div class="link-group clear">
+        <div class="links-item">
+          <p class="link-title">商户支持</p>
+          <a href="#" class="noStyle block link">产品中心</a>
+          <a href="#" class="noStyle block link">解决方案</a>
+        </div>
+        <div class="links-item">
+          <p class="link-title">商户合作</p>
+          <a href="#" class="noStyle block link">联系我们</a>
+          <a href="#" class="noStyle block link">合作客户</a>
+        </div>
+        <div class="links-item">
+          <p class="link-title">关于我们</p>
+          <a href="#" class="noStyle block link">公司介绍</a>
+          <a href="#" class="noStyle block link">媒体报道</a>
+        </div>
+        <div class="links-item">
+          <p class="link-title">公司站点</p>
+          <a href="#" class="noStyle block link">互动游戏平台</a>
+          <a href="#" class="noStyle block link">行为分析平台</a>
+        </div>
+        <div class="links-item wx">
+          <img src="../img/wx.png" alt="微信公众号"><br>
+          <span>关注我们的公众号</span>
+        </div>
+      </div>
+      <div class="hr1"></div>
+      <div class="inline copy">Copyright &copy; 无锡创思感知科技有限公司 All Rights Reserverd .苏ICP备13045243号-1</div>
+      <div id="toTop" class="pointer">
+        <img src="../img/totop.png" alt="返回顶部">
+      </div>
+    </footer>
+  </div>
+
+  <script src="../lib/vue/vue.js"></script>
+  <script src="../lib/element-ui/index.js"></script>
+  <script src="../js/cooperation.js"></script>
+</body>
+
+</html>
