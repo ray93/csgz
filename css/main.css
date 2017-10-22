@@ -6,8 +6,14 @@
 }
 
 body {
-  min-width: 1349px;
+  min-width: 1366px;
   position: relative;
+}
+
+@media screen and (min-width:1366px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 
 .borderbox {
