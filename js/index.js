@@ -178,6 +178,11 @@
           loadImage(item.urlPressed)
         })
       })
+      malls.forEach(function (items) {
+        items.forEach(function (item) {
+          loadImage(item.urlPressed)
+        })
+      })
     }
   })
 }())

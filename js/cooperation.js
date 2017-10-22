@@ -147,6 +147,22 @@
         brands: brands,
       }
     },
+    mounted() {
+      function loadImage(url) {
+        var img = new Image()
+        img.src = url
+        if (img.complete) {
+          return;
+        }
+        img.onload = function () {}
+      }
+      brands.forEach(function (item) {
+        loadImage(item.urlPressed)
+      })
+      malls.forEach(function (item) {
+        loadImage(item.urlPressed)
+      })
+    },
     methods: {
       changeSelected: function (type) {
         if (this.selectedType === type) {
