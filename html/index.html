@@ -159,21 +159,21 @@
         <div class="borderbox news-content">
           <div class="news-item">
             <div class="img-margin">
-              <img src="http://iph.href.lu/300x225" alt="">
+              <img src="../img/noImg.png" alt="">
             </div>
             <div class="stfont news-value">互动之趣：让你身临其境，步入现场</div>
             <div class="stfont news-time">2017.07.28</div>
           </div>
           <div class="news-item">
             <div class="img-margin">
-              <img src="http://iph.href.lu/300x225" alt="">
+              <img src="../img/noImg.png" alt="">
             </div>
             <div class="stfont news-value">创思携手casio开创零售新市场</div>
             <div class="stfont news-time">2017.07.28</div>
           </div>
           <div class="news-item">
             <div class="img-margin">
-              <img src="http://iph.href.lu/300x225" alt="">
+              <img src="../img/noImg.png" alt="">
             </div>
             <div class="stfont news-value">转型新零售之路：向智慧零售迈进</div>
             <div class="stfont news-time">2017.07.2</div>
@@ -213,9 +213,11 @@
           </div>
           <div class="cooperation-brands">
             <el-row type="flex" justify="space-around" v-for="(items, index) in brands" :key="index">
-              <el-col :span="4" v-for="item in items">
-                <div class="grid-content bg-purple brand-item" :style="{'background-image': getImg(item)}" @mouseover="item.isHover = true"
-                  @mouseout="item.isHover = false"></div>
+              <el-col :span="4" v-for="item in items" :key="item.url">
+                <div class="grid-content bg-purple brand-item" @mouseover="item.isHover = true"
+                  @mouseout="item.isHover = false">
+                  <img :src="item.isHover?item.urlPressed:item.url" alt="">
+                </div>
               </el-col>
             </el-row>
           </div>

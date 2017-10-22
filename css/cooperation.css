@@ -1,0 +1,40 @@
+.content .banner {
+  width: 100%;
+  height: 440px;
+}
+
+.content .cooperation {
+  width: 100%;
+  padding: 0 210px 50px;
+}
+
+.content .cooperation-brands .brand-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.content .cooperation-brands .brand-item {
+  width: 220px;
+  height: 362px;
+  margin-top: 40px;
+  margin-right: 22px;
+  cursor: pointer;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.content .cooperation-brands .brand-item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.content .cooperation-brands .brand-item .brand-logo {
+  width: 220px;
+  height: 100px;
+  margin: 262px 0 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
