@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="../css/about.css">
 </head>
 
-<body>
+<body sroll="no">
   <div class="main">
     <!-- 顶部logo及菜单 -->
     <header>
@@ -157,7 +157,7 @@
             <div class="contactitem brand-item" :style="{'background-image': getImg(item)}" @mouseover="item.isHover = true" @mouseout="item.isHover = false"></div>
             <div class="contactdetail">{{item.detail}}</div>
             <transition name="fade">
-              <div class="wechattooltip" v-if="item.isHover === true && item.id === 'wechat' ">
+              <div class="wechattooltip" style="display:none" v-show="item.isHover === true && item.id === 'wechat' ">
                 <img src="../img/about/wechat_tooltip.png" alt="">
               </div>
             </transition>

@@ -1,0 +1,45 @@
+.content .behavior_banner {
+    width: 100%;
+}
+
+.content .behavior_banner img {
+    width: 100%;
+}
+
+.content .greybg {
+    background-color: #fbfbfd;
+}
+
+.content .item {
+    width: 100%;
+    padding: 0 210px 50px;
+}
+
+.content .title {
+    padding-left: 20px;
+    height: 80px;
+    border-left: 4px solid #13a2e0;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.content .title ul {
+    height: 80px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.content .title ul li {
+    list-style-type: none;
+}
+
+.content .title .litop {
+    color: #333333;
+    font-size: 36.0px;
+}
+
+.content .title .libottom {
+    color: #a9a9a9;
+    font-size: 22.0px;
+    padding-top: 10px;
+}

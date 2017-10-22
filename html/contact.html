@@ -57,7 +57,8 @@
                 </div>
 
                 <div class="address">
-                    <a href="https://www.baidu.com" target="view_window">
+                    <a href="http://map.baidu.com/?newmap=1&shareurl=1&l=21&tn=B_NORMAL_MAP&hb=B_SATELLITE_STREET&c=13400575,3674632&s=s%26wd%3D%E6%97%A0%E9%94%A1%E5%B8%82%E6%96%B0%E5%8C%BA%E9%9C%87%E6%B3%BD%E8%B7%AF18%E5%8F%B7%E6%97%A0%E9%94%A1(%E5%9B%BD%E5%AE%B6)%E8%BD%AF%E4%BB%B6%E5%9B%AD%E6%B0%B4%E7%93%B6%E5%BA%A7411%E5%AE%A4%26c%3D315"
+                        target="view_window">
                         <img src="../img/contact/bitmap01.png" alt="">
                     </a>
 
@@ -99,7 +100,8 @@
                     </div>
                 </div>
                 <div class="address">
-                    <a href="https://www.baidu.com" target="view_window">
+                    <a href="http://map.baidu.com/?newmap=1&shareurl=1&l=21&tn=B_NORMAL_MAP&hb=B_SATELLITE_STREET&c=13517231,3638249&i=-1,0&s=s%26wd%3D%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BB%B6%E5%AE%89%E8%A5%BF%E8%B7%AF1600%E5%8F%B7%E7%A6%BE%E6%A3%AE%E5%95%86%E5%8A%A1%E6%A5%BC407%E5%AE%A4%26c%3D315"
+                        target="view_window">
                         <img src="../img/contact/bitmap02.png" alt="">
                     </a>
 
@@ -144,13 +146,13 @@
 
 
             <!-- 联系方式 -->
-            <div class="borderbox contactgroup">
+            <div class="borderbox item contactgroup">
                 <el-row>
                     <el-col :span="6" v-for="item in contacts" :key="item.id">
                         <div class="contactitem brand-item" :style="{'background-image': getImg(item)}" @mouseover="item.isHover = true" @mouseout="item.isHover = false"></div>
                         <div class="contactdetail">{{item.detail}}</div>
                         <transition name="fade">
-                            <div class="wechattooltip" v-if="item.isHover === true && item.id === 'wechat' ">
+                            <div class="wechattooltip" style="display:none" v-show="item.isHover === true && item.id === 'wechat' ">
                                 <img src="../img/about/wechat_tooltip.png" alt="">
                             </div>
                         </transition>
