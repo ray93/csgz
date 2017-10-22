@@ -66,9 +66,49 @@
                 <div class="borderbox inline stfont title">联系我们</div>
                 <div class="contactusRoot">
                     <div class="contactus">欢迎发送问题与需求给我们</div>
-                    <div class="contactusbutton">
-                        <el-button class="elbutton" type="primary">提出需求</el-button>
+                    <div @click="dialogVisible = true" class="contactusbutton">
+                        提出需求
                     </div>
+
+                    <el-dialog :visible.sync="dialogVisible" custom-class="require-dialog">
+                        <div class="dialog_title">
+                            <hr class="leftline" />
+                            <span>你想说些什么</span>
+                            <hr class="rightline" />
+                        </div>
+                        <div class="nameandcontact">
+                            <input v-model="name" placeholder="姓名"></input>
+                            <input v-model="contact" placeholder="联系方式"></input>
+                        </div>
+                        <div class="dialog-content">我希望得到以下帮助</div>
+
+                        <div class="dialog-checkbox">
+                            <div class="checkboxitem">
+                                <input type="checkbox" id="item01" class="mycheckbox" value="产品资料" v-model="checkedNames">
+                                <label for="item01"></label>
+                                <div class="checkboxlabel">产品资料</div>
+                            </div>
+                            <div class="checkboxitem">
+                                <input type="checkbox" id="item02" class="mycheckbox" value="产品价格" v-model="checkedNames">
+                                <label for="item02"></label>
+                                <div class="checkboxlabel">产品价格</div>
+                            </div>
+                            <div class="checkboxitem">
+                                <input type="checkbox" id="item03" class="mycheckbox" value="软件演示" v-model="checkedNames">
+                                <label for="item03"></label>
+                                <div class="checkboxlabel">软件演示</div>
+                            </div>
+                            <div class="checkboxitem">
+                                <input type="checkbox" id="item04" class="mycheckbox" value="合作咨询" v-model="checkedNames">
+                                <label for="item04"></label>
+                                <div class="checkboxlabel">合作咨询</div>
+                            </div>
+                        </div>
+                        <div slot="footer" class="dialog-footer">
+                            <div class="submit" @click="submit()">完成并提交</div>
+                        </div>
+                    </el-dialog>
+
                 </div>
 
                 <div class="address">
@@ -216,7 +256,7 @@
 
     <script src="../lib/vue/vue.js"></script>
     <script src="../lib/element-ui/index.js"></script>
-    <script src="../js/about.js"></script>
+    <script src="../js/contact.js"></script>
     <script src="../js/toTop.js"></script>
 </body>
 
