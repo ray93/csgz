@@ -9,7 +9,10 @@
     methods: {
       changeSelected: function (type) {
         this.selectedType = type
-      }
+      },
+      getMore: function() {
+        window.open("http://game.troncell.com/")
+      },
     },
     computed: {
       getImage() {
