@@ -183,6 +183,7 @@
 .dialog_title {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .dialog_title .leftline {
