@@ -380,6 +380,7 @@
 .content .bg-purple.brand-item {
   height: 110px;
   cursor: pointer;
-  background-position: center center;
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

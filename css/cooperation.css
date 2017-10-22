@@ -34,6 +34,7 @@
   height: 100px;
   margin: 262px 0 0;
   cursor: pointer;
-  background-position: center center;
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

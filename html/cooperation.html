@@ -57,7 +57,9 @@
           <div class="brand-group">
             <div class="brand-item" v-for="(item, index) in brands" :key="item.url" :style="{'background-image': getbg(item)}" @mouseover="item.isHover = true"
               @mouseout="item.isHover = false">
-              <div class="brand-logo" :style="{'background-image': getImg(item)}"></div>
+              <div class="brand-logo">
+                <img :src="item.isHover?item.urlPressed:item.url" alt="">
+              </div>
             </div>
           </div>
         </div>

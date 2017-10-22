@@ -214,8 +214,10 @@
           <div class="cooperation-brands">
             <el-row type="flex" justify="space-around" v-for="(items, index) in brands" :key="index">
               <el-col :span="4" v-for="item in items" :key="item.url">
-                <div class="grid-content bg-purple brand-item" :style="{'background-image': getImg(item)}" @mouseover="item.isHover = true"
-                  @mouseout="item.isHover = false"></div>
+                <div class="grid-content bg-purple brand-item" @mouseover="item.isHover = true"
+                  @mouseout="item.isHover = false">
+                  <img :src="item.isHover?item.urlPressed:item.url" alt="">
+                </div>
               </el-col>
             </el-row>
           </div>
