@@ -56,6 +56,11 @@
         methods: {
             getImg(item) {
                 return `url("${item.isHover?item.urlPressed:item.url}")`
+            },
+            openWindow(item) {
+                if (item.id === 'weibo') {
+                    window.open("http://weibo.com/troncell");
+                }
             }
         }
     });
