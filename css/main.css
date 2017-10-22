@@ -22,6 +22,7 @@ ul.noStyle {
 
 a.noStyle {
   text-decoration: none;
+  color: inherit;
 }
 
 .inline {
@@ -150,6 +151,10 @@ a.noStyle {
 
 .menu-group #product-menu .product-type.selected {
   color: #14a1df;
+}
+
+.menu-group #product-menu .product-type a {
+  color: inherit;
 }
 
 .menu-group .menu-item.selected,
