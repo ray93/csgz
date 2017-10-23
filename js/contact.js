@@ -59,7 +59,7 @@
         },
         methods: {
             getImg(item) {
-                return `url("${item.isHover?item.urlPressed:item.url}")`
+                return item.isHover ? item.urlPressed : item.url
             },
             openWindow(item) {
                 if (item.id === 'weibo') {

@@ -70,7 +70,7 @@
                         提出需求
                     </div>
 
-                    <el-dialog :visible.sync="dialogVisible" custom-class="require-dialog">
+                    <el-dialog :visible.sync="dialogVisible" style="display:none" v-show="dialogVisible == true" custom-class="require-dialog">
                         <div class="dialog_title">
                             <hr class="leftline" />
                             <span>你想说些什么</span>
@@ -204,8 +204,9 @@
             <div class="borderbox item contactgroup">
                 <el-row>
                     <el-col :span="6" v-for="item in contacts" :key="item.id">
-                        <div class="contactitem brand-item" :style="{'background-image': getImg(item)}" @mouseover="item.isHover = true" @mouseout="item.isHover = false"
-                            @click="openWindow(item)"></div>
+                        <div class="contactitem brand-item" @mouseover="item.isHover = true" @mouseout="item.isHover = false" @click="openWindow(item)">
+                            <img :src=getImg(item) alt="">
+                        </div>
                         <div class="contactdetail">{{item.detail}}</div>
                         <transition name="fade">
                             <div class="wechattooltip" style="display:none" v-show="item.isHover === true && item.id === 'wechat' ">

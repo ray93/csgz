@@ -166,11 +166,12 @@
       </div>
 
       <!-- 联系方式 -->
-      <div class="borderbox contactgroup">
+      <div class="borderbox item contactgroup">
         <el-row>
           <el-col :span="6" v-for="item in contacts" :key="item.id">
-            <div class="contactitem brand-item" :style="{'background-image': getImg(item)}" @mouseover="item.isHover = true" @mouseout="item.isHover = false"
-              @click="openWindow(item)"></div>
+            <div class="contactitem brand-item" @mouseover="item.isHover = true" @mouseout="item.isHover = false" @click="openWindow(item)">
+              <img :src=getImg(item) alt="">
+            </div>
             <div class="contactdetail">{{item.detail}}</div>
             <transition name="fade">
               <div class="wechattooltip" style="display:none" v-show="item.isHover === true && item.id === 'wechat' ">
@@ -221,7 +222,7 @@
 
   <script src="../lib/vue/vue.js"></script>
   <script src="../lib/element-ui/index.js"></script>
-  <script src="../js/about.js"></script>
+  <script src="../js/contact.js"></script>
   <script src="../js/toTop.js"></script>
 </body>
 
