@@ -20,11 +20,13 @@
             isHover: true,
         }
     ];
-    new Vue({
+    window.myVue = new Vue({
         el: '#app',
         data: {
             dialogVisible: false,
             name: "",
+            screenWidth: document.body.clientWidth,
+            leftOffset: (1366 - document.body.clientWidth) / 2,
             contact: "",
             checkedNames: [],
             contacts: [{
@@ -87,6 +89,33 @@
                     message: msg,
                     type: 'warning'
                 });
+            }
+        },
+        watch: {
+            screenWidth(val) {
+                if (!this.timer) {
+                    this.screenWidth = val
+                    this.leftOffset = (1366 - this.screenWidth) / 2;
+                    this.timer = true
+                    let that = this
+                    setTimeout(function () {
+                        console.log('screenWidth', that.screenWidth)
+                        console.log("leftOffset", that.leftOffset)
+                        // that.init()
+                        that.timer = false
+                    }, 400)
+                }
+            }
+        },
+        mounted: function () {
+            console.log(document.body.clientWidth);
+            const that = this
+            window.onresize = () => {
+                return (() => {
+                    window.screenWidth = document.body.clientWidth
+                    that.screenWidth = window.screenWidth
+                    that.leftOffset = (1366 - that.screenWidth) / 2;
+                })()
             }
         }
     });

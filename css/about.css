@@ -1,10 +1,13 @@
 .content .about_banner {
-    width: 100%;
+    /* width: 100%; */
     margin-bottom: 50px;
+    text-align: center;
+    background-color: #4b5eec;
+    position: relative;
 }
 
 .content .about_banner img {
-    width: 100%;
+    width: 1366px;
 }
 
 .content .about_row {
@@ -236,4 +239,8 @@
 .fade-enter,
 .fade-leave-to {
     opacity: 0
+}
+
+html{
+    min-width: 1366px;
 }
