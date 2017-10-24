@@ -147,6 +147,7 @@
             bgColor: '#FBF8F5'
           }
         ],
+        bannerBG: '#0a0b11',
         isOpen: false,
         brands: brands,
         selectedType: "brands"
@@ -166,6 +167,9 @@
           this.selectedType = type
           this.brands = malls
         }
+      },
+      changeCarousel(index) {
+        this.bannerBG = this.banners[index].bgColor
       }
     },
     mounted() {

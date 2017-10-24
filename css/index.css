@@ -1,3 +1,7 @@
+.banner {
+  background-color: #0a0b11;
+}
+
 .banner .el-carousel {
   width: 1366px;
   height: 440px;
