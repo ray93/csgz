@@ -21,22 +21,36 @@
       </div>
       <div class="menu-group">
         <ul class="noStyle menu-ul">
-          <li class="inline"><a class="noStyle inline menu-item selected" href="./index.html">首页</a></li>
+          <li class="inline">
+            <a class="noStyle inline menu-item selected" href="./index.html">首页</a>
+          </li>
           <li class="inline">
             <div class="noStyle pointer inline menu-product menu-item">
               <span>产品中心</span>
               <div id="product-menu">
-                <div class="stfont product-type"><a class="noStyle" href="./drainage.html">引流应用</a></div>
+                <div class="stfont product-type">
+                  <a class="noStyle" href="./drainage.html">引流应用</a>
+                </div>
                 <div class="hr0"></div>
-                <div class="stfont product-type"><a class="noStyle" href="./shop.html">购物应用</a></div>
+                <div class="stfont product-type">
+                  <a class="noStyle" href="./shop.html">购物应用</a>
+                </div>
                 <div class="hr0"></div>
-                <div class="stfont product-type"><a class="noStyle" href="./behavioranalysis.html">行为分析</a></div>
+                <div class="stfont product-type">
+                  <a class="noStyle" href="./behavioranalysis.html">行为分析</a>
+                </div>
               </div>
             </div>
           </li>
-          <li class="inline"><a class="noStyle inline menu-item" href="./program.html">解决方案</a></li>
-          <li class="inline"><a class="noStyle inline menu-item" href="./cooperation.html">合作客户</a></li>
-          <li class="inline"><a class="noStyle inline menu-item" target="view_window" href="http://store.troncell.com/login">商家登陆</a></li>
+          <li class="inline">
+            <a class="noStyle inline menu-item" href="./program.html">解决方案</a>
+          </li>
+          <li class="inline">
+            <a class="noStyle inline menu-item" href="./cooperation.html">合作客户</a>
+          </li>
+          <li class="inline">
+            <a class="noStyle inline menu-item" target="view_window" href="http://store.troncell.com/login">商家登陆</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -56,45 +70,51 @@
             产品中心
           </div>
           <div class="product-group clear">
-            <div class="product-item pointer">
-              <div class="product-img">
-                <img src="../img/index/product/drainage.png" alt="引流应用">
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
+            <a href="../html/drainage.html">
+              <div class="product-item pointer">
+                <div class="product-img">
+                  <img src="../img/index/product/drainage.png" alt="引流应用">
+                  <div class="circle circle1"></div>
+                  <div class="circle circle2"></div>
+                  <div class="circle circle3"></div>
+                </div>
+                <div class="product-hr"></div>
+                <div class="product-name stfont">引流应用</div>
+                <div class="product-icon">
+                  <img src="../img/index/product/drainageico.png" alt="引流应用">
+                </div>
               </div>
-              <div class="product-hr"></div>
-              <div class="product-name stfont">引流应用</div>
-              <div class="product-icon">
-                <img src="../img/index/product/drainageico.png" alt="引流应用">
+            </a>
+            <a href="../html/program.html">
+              <div class="product-item pointer">
+                <div class="product-img">
+                  <img src="../img/index/product/shop.png" alt="购物应用">
+                  <div class="circle circle1"></div>
+                  <div class="circle circle2"></div>
+                  <div class="circle circle3"></div>
+                </div>
+                <div class="product-hr"></div>
+                <div class="product-name stfont">购物应用</div>
+                <div class="product-icon">
+                  <img src="../img/index/product/shopico.png" alt="购物应用">
+                </div>
               </div>
-            </div>
-            <div class="product-item pointer">
-              <div class="product-img">
-                <img src="../img/index/product/shop.png" alt="购物应用">
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
+            </a>
+            <a href="../html/shop.html">
+              <div class="product-item pointer">
+                <div class="product-img">
+                  <img src="../img/index/product/behavior.png" alt="行为分析">
+                  <div class="circle circle1"></div>
+                  <div class="circle circle2"></div>
+                  <div class="circle circle3"></div>
+                </div>
+                <div class="product-hr"></div>
+                <div class="product-name stfont">行为分析</div>
+                <div class="product-icon">
+                  <img src="../img/index/product/behaviorico.png" alt="行为分析">
+                </div>
               </div>
-              <div class="product-hr"></div>
-              <div class="product-name stfont">购物应用</div>
-              <div class="product-icon">
-                <img src="../img/index/product/shopico.png" alt="购物应用">
-              </div>
-            </div>
-            <div class="product-item pointer">
-              <div class="product-img">
-                <img src="../img/index/product/behavior.png" alt="行为分析">
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
-              </div>
-              <div class="product-hr"></div>
-              <div class="product-name stfont">行为分析</div>
-              <div class="product-icon">
-                <img src="../img/index/product/behaviorico.png" alt="行为分析">
-              </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="borderbox item program">
@@ -102,8 +122,8 @@
             解决方案
           </div>
           <a class="noStyle inline pointer more" href="./program.html">
-          查看更多
-        </a>
+            查看更多
+          </a>
           <div class="borderbox program-content">
             <div class="subtitle stfont">智慧门店解决方案</div>
             <div class="control pointer stfont" :class="[isOpen?'open':'close']" @click="isOpen = !isOpen">功能说明</div>
@@ -158,8 +178,8 @@
             媒体报道
           </div>
           <a class="noStyle inline pointer more" href="./news.html">
-          查看更多
-        </a>
+            查看更多
+          </a>
           <div class="borderbox news-content">
             <div class="news-item">
               <div class="img-margin">
@@ -189,8 +209,8 @@
             合作客户
           </div>
           <a class="noStyle inline pointer more" href="./cooperation.html">
-          查看更多
-        </a>
+            查看更多
+          </a>
           <div class="borderbox cooperation-content">
             <div class="cooperation-count">
               <div class="count-item">
@@ -254,7 +274,8 @@
             <a href="./behavioranalysis.html" class="noStyle block link">行为分析平台</a>
           </div>
           <div class="links-item wx">
-            <img src="../img/wx.png" alt="微信公众号"><br>
+            <img src="../img/wx.png" alt="微信公众号">
+            <br>
             <span>关注我们的公众号</span>
           </div>
         </div>
