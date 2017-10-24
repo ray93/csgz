@@ -1,8 +1,6 @@
-.content .contact_banner {
+.contact_banner {
     margin-bottom: 50px;
-    text-align: center;
     background-color: #4b5eec;
-    position: relative;
 }
 
 .content .contact_banner img {
@@ -153,6 +151,7 @@
 
 .content .contactgroup .wechattooltip {
     position: absolute;
+    z-index: 10;
     left: -65px;
     top: 68px;
 }

@@ -1,10 +1,6 @@
-.content .banner {
-  width: 100%;
+.banner .el-carousel {
+  width: 1366px;
   height: 440px;
-}
-
-.content .banner>img {
-  max-width: 100%;
 }
 
 .content .item {

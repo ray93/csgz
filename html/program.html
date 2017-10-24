@@ -12,38 +12,39 @@
 </head>
 
 <body>
-  <div class="main">
-    <!-- 顶部logo及菜单 -->
-    <header>
-      <div id="logo" class="borderbox">
-        <img src="../img/logo.png" alt="logo">
-      </div>
-      <div class="menu-group">
-        <ul class="noStyle menu-ul">
-          <li class="inline"><a class="noStyle inline menu-item" href="./index.html">首页</a></li>
-          <li class="inline">
-            <div class="noStyle pointer inline menu-product menu-item">
-              <span>产品中心</span>
-              <div id="product-menu">
-                <div class="stfont product-type"><a class="noStyle" href="./drainage.html">引流应用</a></div>
-                <div class="hr0"></div>
-                <div class="stfont product-type"><a class="noStyle" href="./shop.html">购物应用</a></div>
-                <div class="hr0"></div>
-                <div class="stfont product-type"><a class="noStyle" href="./behavioranalysis.html">行为分析</a></div>
-              </div>
+  <!-- 顶部logo及菜单 -->
+  <header>
+    <div id="logo" class="borderbox">
+      <img src="../img/logo.png" alt="logo">
+    </div>
+    <div class="menu-group">
+      <ul class="noStyle menu-ul">
+        <li class="inline"><a class="noStyle inline menu-item" href="./index.html">首页</a></li>
+        <li class="inline">
+          <div class="noStyle pointer inline menu-product menu-item">
+            <span>产品中心</span>
+            <div id="product-menu">
+              <div class="stfont product-type"><a class="noStyle" href="./drainage.html">引流应用</a></div>
+              <div class="hr0"></div>
+              <div class="stfont product-type"><a class="noStyle" href="./shop.html">购物应用</a></div>
+              <div class="hr0"></div>
+              <div class="stfont product-type"><a class="noStyle" href="./behavioranalysis.html">行为分析</a></div>
             </div>
-          </li>
-          <li class="inline"><a class="noStyle inline menu-item selected" href="./program.html">解决方案</a></li>
-          <li class="inline"><a class="noStyle inline menu-item" href="./cooperation.html">合作客户</a></li>
-          <li class="inline"><a class="noStyle inline menu-item" target="view_window" href="http://store.troncell.com/login">商家登陆</a></li>
-        </ul>
-      </div>
-    </header>
+          </div>
+        </li>
+        <li class="inline"><a class="noStyle inline menu-item selected" href="./program.html">解决方案</a></li>
+        <li class="inline"><a class="noStyle inline menu-item" href="./cooperation.html">合作客户</a></li>
+        <li class="inline"><a class="noStyle inline menu-item" target="view_window" href="http://store.troncell.com/login">商家登陆</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="banner">
+    <img src="../img/program/banner.png" alt="">
+  </div>
+
+  <div class="main">
     <!-- 内容 -->
     <div class="content" id="app">
-      <div class="banner">
-        <img src="../img/program/banner.png" alt="">
-      </div>
       <div class="borderbox item store">
         <div class="borderbox inline stfont title">
           创思感知智慧门店
@@ -73,48 +74,48 @@
           <div class="control pointer stfont" :class="[isOpen?'open':'close']" @click="isOpen = !isOpen">功能说明</div>
           <div class="clearRight"></div>
           <div class="program-img">
-              <img src="../img/index/troncell.png" alt="智慧门店解决方案">
-              <div class="pointer point" id="point-1">
-                <div class="point-circle-white"></div>
-                <div class="point-circle-color"></div>
-                <div class="stfont point-text" :class="{allshow:isOpen}">智能魔镜</div>
-              </div>
-              <div class="pointer point" id="point-2">
-                <div class="point-circle-white"></div>
-                <div class="point-circle-color"></div>
-                <div class="stfont point-text" :class="{allshow:isOpen}">商品关注统计</div>
-              </div>
-              <div class="pointer point" id="point-3">
-                <div class="point-circle-white"></div>
-                <div class="point-circle-color"></div>
-                <div class="stfont point-text" :class="{allshow:isOpen}">智能云货架</div>
-              </div>
-              <div class="pointer point" id="point-4">
-                <div class="point-circle-white"></div>
-                <div class="point-circle-color"></div>
-                <div class="stfont point-text" :class="{allshow:isOpen}">智能导购</div>
-              </div>
-              <div class="pointer point" id="point-5">
-                <div class="point-circle-white"></div>
-                <div class="point-circle-color"></div>
-                <div class="stfont point-text" :class="{allshow:isOpen}">游戏引流</div>
-              </div>
-              <div class="pointer point" id="point-6">
-                <div class="point-circle-white"></div>
-                <div class="point-circle-color"></div>
-                <div class="stfont point-text" :class="{allshow:isOpen}">客流统计</div>
-              </div>
-              <div class="pointer point" id="point-7">
-                <div class="point-circle-white"></div>
-                <div class="point-circle-color"></div>
-                <div class="stfont point-text" :class="{allshow:isOpen}">基准广告营销</div>
-              </div>
-              <div class="pointer point" id="point-8">
-                <div class="point-circle-white"></div>
-                <div class="point-circle-color"></div>
-                <div class="stfont point-text" :class="{allshow:isOpen}">客户身份识别</div>
-              </div>
+            <img src="../img/index/troncell.png" alt="智慧门店解决方案">
+            <div class="pointer point" id="point-1">
+              <div class="point-circle-white"></div>
+              <div class="point-circle-color"></div>
+              <div class="stfont point-text" :class="{allshow:isOpen}">智能魔镜</div>
             </div>
+            <div class="pointer point" id="point-2">
+              <div class="point-circle-white"></div>
+              <div class="point-circle-color"></div>
+              <div class="stfont point-text" :class="{allshow:isOpen}">商品关注统计</div>
+            </div>
+            <div class="pointer point" id="point-3">
+              <div class="point-circle-white"></div>
+              <div class="point-circle-color"></div>
+              <div class="stfont point-text" :class="{allshow:isOpen}">智能云货架</div>
+            </div>
+            <div class="pointer point" id="point-4">
+              <div class="point-circle-white"></div>
+              <div class="point-circle-color"></div>
+              <div class="stfont point-text" :class="{allshow:isOpen}">智能导购</div>
+            </div>
+            <div class="pointer point" id="point-5">
+              <div class="point-circle-white"></div>
+              <div class="point-circle-color"></div>
+              <div class="stfont point-text" :class="{allshow:isOpen}">游戏引流</div>
+            </div>
+            <div class="pointer point" id="point-6">
+              <div class="point-circle-white"></div>
+              <div class="point-circle-color"></div>
+              <div class="stfont point-text" :class="{allshow:isOpen}">客流统计</div>
+            </div>
+            <div class="pointer point" id="point-7">
+              <div class="point-circle-white"></div>
+              <div class="point-circle-color"></div>
+              <div class="stfont point-text" :class="{allshow:isOpen}">基准广告营销</div>
+            </div>
+            <div class="pointer point" id="point-8">
+              <div class="point-circle-white"></div>
+              <div class="point-circle-color"></div>
+              <div class="stfont point-text" :class="{allshow:isOpen}">客户身份识别</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="borderbox item service">
@@ -141,8 +142,11 @@
         <div class="stfont pointer more-btn" @click="openMore">了解更多</div>
       </div>
     </div>
-    <!-- 页脚 -->
-    <footer class="borderbox">
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="borderbox">
+    <div class="footer-margin">
       <div class="link-group clear">
         <div class="links-item">
           <p class="link-title">商户支持</p>
@@ -174,9 +178,8 @@
       <div id="toTop" class="pointer">
         <img src="../img/totop.png" alt="返回顶部">
       </div>
-    </footer>
-  </div>
-
+    </div>
+  </footer>
   <script src="../lib/vue/vue.js"></script>
   <script src="../js/toTop.js"></script>
   <script src="../js/program.js"></script>
