@@ -1,6 +1,7 @@
-.content .banner {
+.banner {
   width: 100%;
   height: 440px;
+  background-color: #281bd1;
 }
 
 .content .cooperation {

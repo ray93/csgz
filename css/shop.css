@@ -1,8 +1,9 @@
-.content .shop_banner {
+.banner {
     width: 100%;
+    background-color: #FBFBFB;
 }
 
-.content .shop_banner img {
+.content .banner img {
     width: 100%;
 }
 
