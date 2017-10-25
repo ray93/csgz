@@ -213,6 +213,7 @@ footer .links-item {
   float: left;
   margin-top: 42px;
   margin-right: 106px;
+  text-align: left;
 }
 
 footer .links-item:nth-child(4) {

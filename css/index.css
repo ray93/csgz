@@ -91,7 +91,7 @@
 .content .product-group .product-img .circle1 {
   width: 10px;
   height: 10px;
-  background: #9c8d6c;
+  background: #ffffff;
   margin-left: 110px;
   margin-top: -120px;
 }
@@ -99,7 +99,7 @@
 .content .product-group .product-img .circle2 {
   width: 50px;
   height: 50px;
-  border: 1px solid #dddddd;
+  border: 1px solid #ffffff;
   margin-left: 90px;
   margin-top: -30px;
 }
@@ -107,18 +107,18 @@
 .content .product-group .product-img .circle3 {
   width: 230px;
   height: 230px;
-  border: 1px solid #9c8d6c;
+  border: 1px solid #dddddd;
   margin-left: 0;
   margin-top: -142px;
 }
 
 .content .product-group .product-hr {
   position: relative;
-  width: 2px;
+  width: 1px;
   margin: 0 auto;
   margin-top: -38px;
   height: 76px;
-  background: #9c8d6c;
+  background: #dddddd;
   z-index: 10;
 }
 
@@ -192,14 +192,14 @@
 
 .content .program-content .program-img>.point {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 }
 
 .content .program-content .program-img>.point>.point-circle-white {
   position: absolute;
-  left: 6px;
-  top: 6px;
+  left: 8px;
+  top: 8px;
   width: 8px;
   height: 8px;
   border-radius: 4px;
@@ -211,9 +211,9 @@
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
   background: #13a2e0;
   z-index: 1;
   animation: myglare 2s linear infinite;
