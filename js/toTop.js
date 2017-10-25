@@ -3,7 +3,7 @@
 
   function returnTop() {
     window.scrollBy(0, -100)
-    if (document.body.scrollTop > 0) {
+    if (document.documentElement.scrollTop > 0) {
       sdelay = requestAnimationFrame(returnTop)
     }
   }
