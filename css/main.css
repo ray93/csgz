@@ -274,17 +274,23 @@ footer .copy {
 }
 
 footer #toTop {
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
   margin-top: 20px;
   margin-right: 51px;
   float: right;
+  background-image: url('../img/footer_button_up_normal.png');
 }
 
-footer #toTop img {
+footer #toTop:hover {
+  background-image: url('../img/footer_button_up_hover.png');
+}
+
+
+/* footer #toTop img {
   max-width: 44px;
   max-height: 44px;
-}
+} */
 
 
 /* 水平菜单样式 */
