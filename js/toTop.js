@@ -4,11 +4,11 @@
   function returnTop() {
     window.scrollBy(0, -100)
     if (document.documentElement.scrollTop > 0) {
-      sdelay = requestAnimationFrame(returnTop)
+      sdelay = setTimeout(returnTop, 10)
     }
   }
   window.addEventListener("mousewheel", function () {
-    cancelAnimationFrame(sdelay)
+    clearTimeout(sdelay)
   })
   var toTop = document.getElementById("toTop")
   toTop.addEventListener("click", function () {
