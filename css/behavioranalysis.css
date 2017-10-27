@@ -44,3 +44,86 @@
     font-size: 22.0px;
     padding-top: 10px;
 }
+
+.enterstore {
+    width: 100%;
+    height: 279px;
+    background-image: url('../img/behavioranalysis/enterstore-statistics.png');
+    background-size: contain;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.enterstore .analysisItem {
+    padding-left: 70px;
+}
+
+.analysisItem {
+    width: 230px;
+}
+
+.analysisItem .itemImgText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.analysisItem .itemImgText span {
+    font-size: 22px;
+    color: #333333;
+    padding-left: 20px;
+}
+
+.instore {
+    width: 100%;
+    height: 314px;
+    background-image: url('../img/behavioranalysis/instore-analysis.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.areaheat {
+    height: 248px;
+    background-image: url('../img/behavioranalysis/areaheat.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.behaviorImgBg {
+    height: 438px;
+    width: 745px;
+    padding-left: 100px;
+}
+
+.backgroundIcoText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.backgroundIcoText .backgroundIcoTextItem {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.backgroundIcoText .backgroundIcoTextItem span {
+    font-size: 22px;
+    color: #333333;
+    margin-top: 20px;
+}
