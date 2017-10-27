@@ -50,6 +50,7 @@
   margin: 0 64px;
 }
 
+
 /* .content .product-group .product-item:last-child {
   margin-right: 0px;
 } */
@@ -335,17 +336,21 @@
   color: #999999;
 }
 
-.content .cooperation-count {
+.cooperation {
+  width: 100%;
+  padding: 0 210px 50px;
+}
+
+.cooperation-count {
   height: 208px;
-  margin-top: 39px;
   background: url('../img/index/cooperation-count-bg.png') center center no-repeat;
-  width: 1366px;
-  margin-left: -210px;
+  background-size: 100% 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.content .cooperation-count .count-item {
+.cooperation-count .count-item {
   width: 236px;
   height: 100%;
   margin: 0 43px;
@@ -356,7 +361,7 @@
   align-items: center;
 }
 
-.content .cooperation-count .count-item .count-name {
+.cooperation-count .count-item .count-name {
   display: block;
   margin-bottom: 24px;
   height: 33px;
@@ -364,7 +369,7 @@
   font-size: 24.0px;
 }
 
-.content .cooperation-count .count-item .count-value {
+.cooperation-count .count-item .count-value {
   display: block;
   height: 60px;
   line-height: 60px;
