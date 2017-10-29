@@ -3,7 +3,7 @@
     background-color: #4066E2;
 }
 
-.content .behavior_banner img {
+.behavior_banner img {
     width: 100%;
 }
 
@@ -14,6 +14,13 @@
 .content .item {
     width: 100%;
     padding: 0 210px 50px;
+}
+
+@media only screen and (max-width: 980px) {
+    .content .item {
+        width: 100%;
+        padding: 0 12px 50px;
+    }
 }
 
 .content .title {

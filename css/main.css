@@ -93,13 +93,14 @@ a.noStyle {
 #logo {
   width: 100%;
   height: 79px;
-  padding-top: 29px;
+  background: url('../img/logo.png') no-repeat center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #logo img {
-  display: block;
-  max-height: 79px;
-  margin: 0 auto;
+  display: none;
 }
 
 .menu-group {
@@ -177,7 +178,7 @@ a.noStyle {
 
 .banner {
   width: 100%;
-  height: 440px;
+  /* height: 440px; */
   display: flex;
   font-size: 0;
   align-items: center;
@@ -185,7 +186,7 @@ a.noStyle {
   background-color: #4b5eec;
 }
 
-footer {
+.footer01 {
   width: 100%;
   height: 337px;
   background: #f5f5f5;
@@ -193,34 +194,34 @@ footer {
   text-align: center;
 }
 
-footer .footer-margin {
+.footer01 .footer01-margin {
   width: 1366px;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
-footer .footercontent {
+.footer01 .footer01content {
   width: 1366px;
   margin: auto;
 }
 
-footer .link-group {
+.footer01 .link-group {
   height: 222px;
   margin: 0px 210px 0px;
 }
 
-footer .links-item {
+.footer01 .links-item {
   float: left;
   margin-top: 42px;
   margin-right: 106px;
   text-align: left;
 }
 
-footer .links-item:nth-child(4) {
+.footer01 .links-item:nth-child(4) {
   margin-right: 0px;
 }
 
-footer .link-title {
+.footer01 .link-title {
   color: #333333;
   font-family: PingFang;
   font-size: 22px;
@@ -231,7 +232,7 @@ footer .link-title {
   margin-bottom: 19px;
 }
 
-footer a.link {
+.footer01 a.link {
   margin: 0 0 8px 0;
   color: #999999;
   font-family: PingFang;
@@ -241,18 +242,18 @@ footer a.link {
   font-weight: 400;
 }
 
-footer .links-item.wx {
+.footer01 .links-item.wx {
   margin: 0;
   margin-top: 40px;
   float: right;
 }
 
-footer .links-item.wx img {
+.footer01 .links-item.wx img {
   width: 109px;
   margin: 0 18px;
 }
 
-footer .links-item.wx span {
+.footer01 .links-item.wx span {
   color: #636363;
   margin-top: 11px;
   display: block;
@@ -263,11 +264,11 @@ footer .links-item.wx span {
   font-weight: 400;
 }
 
-footer .footer-margin>.hr1 {
+.footer01 .footer01-margin>.hr1 {
   margin: 0 210px;
 }
 
-footer .copy {
+.footer01 .copy {
   margin: 0 210px;
   color: #aaaaaa;
   margin-top: 32px;
@@ -283,17 +284,23 @@ footer #toTop {
   width: 46px;
   height: 46px;
   margin-top: 20px;
-  margin-right: 261px;
+  margin-right: 80px;
   float: right;
-  background-image: url('../img/footer_button_up_normal.png');
+  background: url('../img/footer_button_up_normal.png') no-repeat center;
+  margin-top: -80px;
+  position: relative;
 }
 
 footer #toTop:hover {
-  background-image: url('../img/footer_button_up_hover.png');
+  background: url('../img/footer_button_up_hover.png') no-repeat center;
+}
+
+.footer02 {
+  display: none;
 }
 
 
-/* footer #toTop img {
+/* .footer01 #toTop img {
   max-width: 44px;
   max-height: 44px;
 } */
@@ -335,4 +342,97 @@ footer #toTop:hover {
   height: 22px;
   background: #eaeaea;
   flex-shrink: 0;
+}
+
+.header02 {
+  overflow: hidden;
+  z-index: 100;
+  display: none;
+}
+
+.header02 .mobileMenuGroup {
+  display: block;
+  width: auto;
+  height: 300px;
+  background-color: #14A2E0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.header02 .mobileMenuGroup .mobileitem {
+  width: 33.33%;
+  height: 100px;
+  font-size: 45px;
+  line-height: 100px;
+  display: block;
+  float: left;
+  text-align: center;
+  color: #ffffff;
+}
+
+.mobileitem.selected {
+  background-color: #0e7aa8;
+}
+
+@media screen and (max-width:980px) {
+  body {
+    min-width: 980px;
+    position: relative;
+  }
+  .footer01 {
+    display: none;
+  }
+  .header01 {
+    display: none;
+  }
+  .header02 {
+    display: none;
+  }
+  #logo {
+    height: 200px;
+    padding-top: 0;
+  }
+  #logo img {
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    margin-right: 50px;
+  }
+  .footer02 {
+    display: block;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+  }
+  .footer02 .footeritem01 {
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #666666;
+    padding-left: 30px;
+    font-size: 22px;
+  }
+  .footer02 .footeritem01 span {
+    padding-left: 20px;
+  }
+  .footer02 .footeritem02 {
+    height: 50px;
+    font-size: 35px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #14A2E0;
+    padding-left: 30px;
+    margin: 20px 0;
+  }
+  footer #toTop {
+    height: 100px;
+    width: 100px;
+    margin-top: -180px;
+    background-size: contain;
+  }
+  footer #toTop:hover {
+    background-size: contain;
+  }
 }
