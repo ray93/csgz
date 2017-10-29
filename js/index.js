@@ -150,14 +150,15 @@
         bannerBG: '#0a0b11',
         isOpen: false,
         brands: brands,
-        selectedType: "brands"
+        selectedType: "brands",
+        carHeight: '440px',
       }
     },
     methods: {
-      getImg(item) {
-        return `url("${item.isHover?item.urlPressed:item.url}")`
+      getImg: function (item) {
+        return 'url("' + item.isHover ? item.urlPressed : item.url + '")'
       },
-      changeSelected(type) {
+      changeSelected: function (type) {
         if (this.selectedType === type) {
           return;
         } else if (type === "brands") {
@@ -168,11 +169,43 @@
           this.brands = malls
         }
       },
-      changeCarousel(index) {
+      changeCarousel: function (index) {
         this.bannerBG = this.banners[index].bgColor
+      },
+      changeCarouselHeight: function () {
+        var w = this.$refs.banner.offsetWidth
+        w = w > 1366 ? 1366 : w
+        this.carHeight = w / 1366 * 440 + 'px'
       }
     },
-    mounted() {
+    mounted: function () {
+      this.changeCarouselHeight()
+      var _this = this
+
+      window.addEventListener('resize', function () {
+        _this.changeCarouselHeight()
+      })
+
+      $("#menuButton").click(function () {
+        if ($(this).hasClass("nav-btn-active")) {
+          $(this).removeClass("nav-btn-active");
+          $(".header02").fadeOut()
+        } else {
+          $(this).addClass("nav-btn-active");
+          $(".header02").fadeIn()
+        }
+      });
+      if ($(document).width() > 980) {
+        $(".header02").hide()
+        $("#menuButton").removeClass("nav-btn-active");
+      }
+      $(window).resize(function () {
+        if ($(document).width() > 980) {
+          $(".header02").hide()
+          $("#menuButton").removeClass("nav-btn-active");
+        }
+      });
+
       function loadImage(url) {
         var img = new Image()
         img.src = url

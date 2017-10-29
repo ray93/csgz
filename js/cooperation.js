@@ -147,7 +147,7 @@
         brands: brands,
       }
     },
-    mounted() {
+    mounted: function () {
       function loadImage(url) {
         var img = new Image()
         img.src = url
@@ -175,11 +175,11 @@
           this.brands = malls
         }
       },
-      getbg(item) {
-        return `url("${item.bg}")`
+      getbg: function (item) {
+        return 'url("' + item.bg + '")'
       },
-      getImg(item) {
-        return `url("${item.isHover?item.urlPressed:item.url}")`
+      getImg: function (item) {
+        return 'url("' + item.isHover ? item.urlPressed : item.url + '")'
       },
     },
   })

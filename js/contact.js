@@ -58,15 +58,15 @@
       ]
     },
     methods: {
-      getImg(item) {
+      getImg: function (item) {
         return item.isHover ? item.urlPressed : item.url
       },
-      openWindow(item) {
+      openWindow: function (item) {
         if (item.id === 'weibo') {
           window.open("http://weibo.com/troncell");
         }
       },
-      submit() {
+      submit: function () {
         if (this.name.replace(/(^\s*)|(\s*$)/g, "").length == 0)
           this.openMessage('姓名不可以为空');
         else if (this.contact.replace(/(^\s*)|(\s*$)/g, "").length == 0)
@@ -81,7 +81,7 @@
         }
 
       },
-      openMessage(msg) {
+      openMessage: function (msg) {
         this.$message({
           showClose: true,
           message: msg,

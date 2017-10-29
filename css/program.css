@@ -1,10 +1,15 @@
- .banner {
+.banner {
   width: 100%;
-  height: 440px;
+  max-height: 440px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #01a383;
+}
+
+.banner img {
+  max-width: 100%;
+  max-height: 440px;
 }
 
 .content .item {
@@ -50,9 +55,10 @@
   height: 600px;
 }
 
-.content .store .store-content img{
+.content .store .store-content img {
   height: 600px;
 }
+
 
 /* .content .store .store-content .store-item {
   height: 54px;
@@ -325,4 +331,27 @@
   color: #ffffff;
   font-size: 20px;
   text-align: center;
+}
+
+.content .hasBg-margin {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #fbfbfd;
+  z-index: -1;
+}
+
+#hasBg-1 {
+  height: 840px;
+}
+
+#hasBg-2 {
+  height: 252px;
+}
+
+@media screen and (max-width:980px) {
+  .content .item {
+    width: 100%;
+    padding: 40px 10px 50px;
+  }
 }

@@ -194,7 +194,7 @@ a.noStyle {
   text-align: center;
 }
 
-.footer01 .footer01-margin {
+.footer01 .footer-margin {
   width: 1366px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -264,7 +264,7 @@ a.noStyle {
   font-weight: 400;
 }
 
-.footer01 .footer01-margin>.hr1 {
+.footer01 .footer-margin>.hr1 {
   margin: 0 210px;
 }
 
