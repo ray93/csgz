@@ -190,9 +190,11 @@
         if ($(this).hasClass("nav-btn-active")) {
           $(this).removeClass("nav-btn-active");
           $(".header02").fadeOut()
+          $(this).attr('src', "../img/menubutton_normal.png");
         } else {
           $(this).addClass("nav-btn-active");
           $(".header02").fadeIn()
+          $(this).attr('src', "../img/menubutton_pressed.png");
         }
       });
       if ($(document).width() > 980) {
