@@ -174,8 +174,8 @@
       },
       changeCarouselHeight: function () {
         var w = this.$refs.banner.offsetWidth
-        w = w > 1366 ? 1366 : w
-        this.carHeight = w / 1366 * 440 + 'px'
+        w = w > 1920 ? 1920 : w
+        this.carHeight = w / 1920 * 440 + 'px'
       }
     },
     mounted: function () {
@@ -190,9 +190,11 @@
         if ($(this).hasClass("nav-btn-active")) {
           $(this).removeClass("nav-btn-active");
           $(".header02").fadeOut()
+          $(this).attr('src', "../img/menubutton_normal.png");
         } else {
           $(this).addClass("nav-btn-active");
           $(".header02").fadeIn()
+          $(this).attr('src', "../img/menubutton_pressed.png");
         }
       });
       if ($(document).width() > 980) {
