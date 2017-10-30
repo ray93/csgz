@@ -10,12 +10,9 @@
     max-width: 100%;
 }
 
-.content .about_row {
-    width: 946px;
-    margin: auto;
-}
-
-.el-row {
+.horizontal {
+    display: flex;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
@@ -25,6 +22,11 @@
     border-color: #999999;
     width: 448px;
     height: 370px;
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .row-bg {
@@ -34,8 +36,6 @@
 
 .grid-content .gird_img {
     height: 150px;
-    text-align: center;
-    vertical-align: middle;
 }
 
 .grid-content .gird_img img {
@@ -56,7 +56,6 @@
 }
 
 .grid-content .gird_title h1 {
-    width: 200px;
     height: 30px;
     color: #333333;
     font-size: 22.0px;
@@ -72,11 +71,8 @@
     height: 130px;
     color: #666666;
     font-size: 14.0px;
-    font-style: normal;
-    font-stretch: normal;
     font-weight: 400;
-    text-align: stretch;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     line-height: 1.5;
     margin: auto;
 }
@@ -200,7 +196,6 @@
     left: -5px;
     top: 1878px;
 }
-
 
 .content .contactgroup {
     width: 100%;

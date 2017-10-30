@@ -45,7 +45,7 @@
   height: 387px;
   margin-top: 47px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -422,9 +422,9 @@
     width: 100%;
     padding: 40px 10px 50px;
   }
-  .content .product-group {
-    justify-content: space-between;
-  }
+  /* .content .product-group {
+    justify-content: space-around;
+  } */
   .content .product-group .product-item {
     margin: 0;
   }
