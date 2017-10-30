@@ -174,8 +174,8 @@
       },
       changeCarouselHeight: function () {
         var w = this.$refs.banner.offsetWidth
-        w = w > 1366 ? 1366 : w
-        this.carHeight = w / 1366 * 440 + 'px'
+        w = w > 1920 ? 1920 : w
+        this.carHeight = w / 1920 * 440 + 'px'
       }
     },
     mounted: function () {
