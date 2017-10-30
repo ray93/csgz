@@ -14,13 +14,6 @@
     padding: 0 210px 50px;
 }
 
-@media only screen and (max-width: 980px) {
-    .content .item {
-        width: 100%;
-        padding: 0 12px 50px;
-    }
-}
-
 .content .greybg {
     background-color: #fbfbfd;
 }
@@ -168,4 +161,14 @@
 
 .bg03 {
     height: 430px;
+}
+
+@media only screen and (max-width: 980px) {
+    .content .item {
+        width: 100%;
+        padding: 0 12px 50px;
+    }
+    .product-function {
+        padding: 0;
+    }
 }
