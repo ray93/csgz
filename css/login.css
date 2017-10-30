@@ -1,0 +1,159 @@
+html {
+  width: 100%;
+  height: 100%;
+  background: url("../img/login/bg.png");
+  background-size: auto 100%;
+}
+
+.margin {
+  margin: 260px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+}
+
+.margin>img {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.form-margin {
+  width: 450px;
+  height: 350px;
+  background: #fff;
+  position: relative;
+}
+
+input,
+.btn {
+  width: 320px;
+  height: 52px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  background: #fff;
+  outline: none;
+  position: absolute;
+  left: 64px;
+  padding-left: 60px;
+  color: #333;
+  font-size: 19px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: rgba(100, 161, 231, 1);
+}
+
+input.userName {
+  top: 64px;
+  background: url("../img/login/user.png") 15px center no-repeat;
+}
+
+input.password {
+  top: 148px;
+  background: url("../img/login/pass.png") 15px center no-repeat;
+}
+
+.eye {
+  position: absolute;
+  top: 169.5px;
+  left: 346px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.btn {
+  padding: 0;
+  bottom: 64px;
+  cursor: pointer;
+  background: #14a2e0;
+  color: #fff;
+  font-size: 21.6px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.btn:active {
+  background: #0f7baa;
+}
+
+.err-msg {
+  position: absolute;
+  width: 320px;
+  height: 52px;
+  background: #ed7765;
+  left: 64px;
+  line-height: 52px;
+  font-size: 16.8px;
+  color: #fff;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border: 1px solid #bf5e4f;
+  bottom: 114px;
+  display: none;
+}
+
+.err-msg.isShow {
+  display: block;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0
+}
+
+@media screen and (max-width:980px) {
+  .margin {
+    margin: 100px auto 0;
+    width: 900px;
+    font-size: 0;
+    flex-direction: column;
+  }
+  .form-margin {
+    width: 900px;
+    height: 640px;
+  }
+  .margin>img {
+    width: 602px;
+  }
+  input,
+  .btn {
+    width: calc(100% - 128px);
+    height: 120px;
+    font-size: 36px;
+    padding-left: 120px;
+  }
+  input.userName {
+    background-size: 45px auto;
+    background-position: 30px center;
+  }
+  input.password {
+    top: 258px;
+    background-size: 45px auto;
+    background-position: 30px center;
+  }
+  .eye {
+    width: 50px;
+    top: 305px;
+    left: 760px;
+  }
+  .btn {
+    font-size: 37px;
+    letter-spacing: 10px;
+    padding: 0;
+    text-align: center;
+  }
+  .err-msg {
+    width: calc(100% - 128px);
+    height: 120px;
+    font-size: 36px;
+    line-height: 120px;
+    bottom: 134px;
+  }
+}

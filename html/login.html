@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登陆</title>
+  <link rel="stylesheet" href="../lib/normalize.css">
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+  <div class="margin" id="app">
+    <div class="form-margin">
+      <img :src="showPass?'../img/login/eye_on.png':'../img/login/eye_off.png'" class="eye" @click="showPass = !showPass" alt="">
+      <input type="text" class="userName" placeholder="用户名" v-model="userName">
+      <input :type="showPass?'text':'password'" class="password" placeholder="密码" v-model="password">
+
+      <button class="btn" @click="login">
+        登陆
+      </button>
+      <transition name="fade">
+        <div class="err-msg" v-show="isError" :class="{isShow: isError}">账户未激活或用户名密码错误</div>
+      </transition>
+    </div>
+    <img src="../img/login/advert.png" alt="">
+  </div>
+
+  <script src="../lib/vue/vue.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+
+</html>
