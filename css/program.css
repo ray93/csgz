@@ -52,12 +52,12 @@
   background: url('../img/program/store.png') right center no-repeat;
   position: relative; */
   text-align: center;
-  height: 600px;
+  height: 650px;
   position: relative;
 }
 
 .content .store .store-content img {
-  height: 600px;
+  height: 650px;
 }
 
 
@@ -358,18 +358,18 @@
 }
 
 #circle-1 {
-  left: 355px;
-  top: 245px;
+  left: 358px;
+  top: 232px;
 }
 
 #circle-2 {
-  left: 101px;
-  top: 548px;
+  left: 72px;
+  top: 575px;
 }
 
 #circle-3 {
-  left: 609px;
-  top: 548px;
+  left: 642px;
+  top: 575px;
 }
 
 .content .store-content .circle-margin .circle {
