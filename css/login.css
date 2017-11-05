@@ -23,7 +23,7 @@ body {
   padding: 150px 0;
 }
 
-@media screen and (min-height:1080px) {
+@media screen and (min-height:1080px) and (min-width:981px) {
   .margin {
     padding: 0;
     height: calc(100vh - 446px);
