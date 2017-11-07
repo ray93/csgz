@@ -129,21 +129,25 @@
       return {
         banners: [{
             id: 1,
-            url: '../img/index/banner/banner01.png',
+            url: '../img/index/banner/banner01_1920.png',
+            url_1366: '../img/index/banner/banner01.png',
             bgColor: '#0a0b11'
           },
           {
             id: 2,
-            url: '../img/index/banner/banner02.png',
+            url: '../img/index/banner/banner02_1920.png',
+            url_1366: '../img/index/banner/banner02.png',
             bgColor: '#fdfdfd'
           },
           {
             id: 3,
-            url: '../img/index/banner/banner03.png',
+            url: '../img/index/banner/banner03_1920.png',
+            url_1366: '../img/index/banner/banner03.png',
             bgColor: '#fadc3e'
           }, {
             id: 4,
-            url: '../img/index/banner/banner04.png',
+            url: '../img/index/banner/banner04_1920.png',
+            url_1366: '../img/index/banner/banner04.png',
             bgColor: '#FBF8F5'
           }
         ],
@@ -172,10 +176,19 @@
       changeCarousel: function (index) {
         this.bannerBG = this.banners[index].bgColor
       },
+      getSrc: function (item) {
+        var w = document.documentElement.clientWidth;
+        return w > 1366 ? item.url : item.url_1366
+      },
       changeCarouselHeight: function () {
-        var w = this.$refs.banner.offsetWidth
-        w = w > 1366 ? 1366 : w
-        this.carHeight = w / 1366 * 440 + 'px'
+        var w = document.documentElement.clientWidth;
+        if (w >= 1920) {
+          this.carHeight = 440 + 'px';
+        } else if (w > 1366 && w < 1920) {
+          this.carHeight = w / 1920 * 440 + 'px';
+        } else {
+          this.carHeight = w / 1366 * 440 + 'px';
+        }
       }
     },
     mounted: function () {
