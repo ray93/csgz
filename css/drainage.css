@@ -283,7 +283,7 @@
 
 .content .adaptation2 {
   background: #fbfbfd;
-  height: 514px;
+  height: 580px;
 }
 
 .content .adaptation2>img {
@@ -359,6 +359,10 @@
 #hasBg-2 {
   height: 252px;
 }
+#hasBg-3 {
+  height: 580px;
+}
+
 
 @media screen and (max-width:980px) {
   .content .item {

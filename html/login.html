@@ -93,7 +93,7 @@
       <input :type="showPass?'text':'password'" class="password" placeholder="密码" v-model="password">
 
       <button class="btn" @click="login">
-        登陆
+        登录
       </button>
       <transition name="fade">
         <div class="err-msg" v-show="isError" :class="{isShow: isError}">账户未激活或用户名密码错误</div>
