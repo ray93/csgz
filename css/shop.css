@@ -171,4 +171,20 @@
     .product-function {
         padding: 0;
     }
+    .horizontal-menu {
+        height: 60px;
+    }
+    .horizontal-menu .menu-item {
+        font-size: 40px;
+    }
+    .horizontal-menu .menu-br {
+        height: 45px;
+    }
+    .content .overview-content .overview-item .textmargin .overview-text {
+        font-size: 20px;
+    }
+    .function-module .module-content .moudule-content-content{
+        font-size: 23px;
+        line-height: 1.3;
+    }
 }

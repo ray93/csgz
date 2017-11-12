@@ -52,4 +52,13 @@
   .content .cooperation-brands .brand-item {
     margin-right: 22px;
   }
+  .horizontal-menu {
+    height: 60px;
+  }
+  .horizontal-menu .menu-item {
+    font-size: 40px;
+  }
+  .horizontal-menu .menu-br {
+    height: 45px;
+  }
 }

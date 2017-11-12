@@ -320,7 +320,7 @@
 
 .content .news-content .news-item {
   width: 300px;
-  height: 290px;
+  /* height: 290px; */
 }
 
 .content .news-content .news-item .img-margin {
@@ -431,5 +431,27 @@
   }
   .cooperation {
     padding: 0 10px 50px;
+  }
+  .content .more {
+    font-size: 25px;
+  }
+  .horizontal-menu {
+    height: 60px;
+  }
+  .horizontal-menu .menu-item {
+    font-size: 40px;
+  }
+  .horizontal-menu .menu-br {
+    height: 45px;
+  }
+  .content .news-content .news-item .news-value {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+  .content .news-content .news-item .news-time {
+    font-size: 25px;
+  }
+  .content .program-content .control {
+    font-size: 25px;
   }
 }

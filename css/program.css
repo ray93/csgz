@@ -430,4 +430,17 @@
     width: 100%;
     padding: 40px 10px 50px;
   }
+  .content .program-content .control {
+    font-size: 25px;
+  }
+  .content .service-content .service-item .service-subtitle {
+    font-size: 25px;
+  }
+  .content .service-content .service-item .service-content {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  .content .item-more .text {
+    font-size: 30px;
+  }
 }
